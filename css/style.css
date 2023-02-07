@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+.header {
+    height : 8.5rem;
+}
+
+
+.inner_header {
+    background-color: rebeccapurple;
+    height : 8.5rem;
+    width : 100%;
+    display: block;
+    margin : 0px;
+}
+
+.header_line_1 {
+    background-color: #17242A;
+    height : 2.5rem;
+    width : 100%;
+    display: block;
+}
+
+.header_line_2 {
+    background-color: #ffffff;
+    height : 6rem;
+    width : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.logo_container {
+    background-color: #17242A;
+    height : 11rem;
+    width : 30rem;
+    display: block;
+    top : 0px;
+    position : absolute;
+    left : 20rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.header_line_2 #du_logo img {
+    height : 100%;
+    width : 6rem;
+}
+.header_line_2 #du_logo {
+    padding : 10px 0px 10px 50px; 
+}
+
+.logo_container img {
+    width: 30rem;
+    height: 10rem;
+    padding-left: 2rem;
+    padding-top:1rem;
+
+}
+
+
+  
+  .navbar-right {
+    display: flex;
+    margin-right: 10rem;
+  }
+  
+  .navbar-right a {
+    margin-right: 8rem;
+    font-size: 4rem;
+    color: #17242A;
+    font-family: "bicyclettelight" ;
+  }
+
+  @font-face {
+    font-family: 'bicyclettelight';
+    src: url('font/Bicyclette-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.home {
+    display: flex;
+    width : 100%;
+    height : 56.2rem;
+    background-image:url(../img/slider1-3.jpg);
+}
+.home img {
+    width : 100%;
+    height : 78rem;
+}
+
+.quote {
+    display: inline-block;
+    padding: 30px;
+    font-family: "bicyclettelight";
+    color:white;
+    z-index: 1;
+    font-size: 8rem;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+  
+.below_icon {
+    position: absolute;
+    height:4rem;
+    width:6rem;
+    bottom: 0px;
+    left: 50%;
+    align-items:flex-end;
+    
+}
+.below_icon img{
+    height: 100%;
+    width:100%;
+}
