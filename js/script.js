@@ -9,7 +9,7 @@ const alumni_slider_data = fetch("../js/data.json")
                     <div class="card swiper-slide">
                         <div class="card-content">
                             <h1 class="name">${result.name}</h1>
-                            <h2 class="batch">${result.batch}</h2>x
+                            <h2 class="batch">${result.batch}</h2>
                         </div>
                         <h1 class="description">${result.description}</h1>
                     </div>
