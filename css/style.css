@@ -98,7 +98,6 @@
     width: 100%;
     height: 62rem;
     background-image: url(../img/slider1-3.jpg);
-
 }
 
 .quote {
@@ -287,3 +286,152 @@ html {
     }
 }
 
+
+  }
+
+  .upcoming-event{
+     display: flex;
+     height : 40rem;
+     justify-content: space-between;
+
+  }
+
+
+
+  .img-area{
+    width: 35%;
+    padding : 3rem 2rem 2rem 5rem;
+    /* background-color: lightblue; */
+  }
+
+  .content-area{
+    width: 65%;
+    /* background-color: lightgreen; */
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .top-area{
+    display: flex;
+  width: 100%;
+  height: 24rem;
+  /* background-color: yellow; */
+  }
+
+  .bottom-area{
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    /* background-color: rgb(82, 82, 32); */
+  }
+
+  .countdown{
+    width:68.5%;
+    height:13rem;
+    font-size: 70px;
+    color: white;
+
+    text-align: center;
+    background-color: darkslategray;
+  }
+
+  .register{
+    width:25%;
+    height:7rem;
+    /* background-color:grey; */
+    padding-top: 6rem;
+
+  }
+
+  .txt-register{
+
+    font-size: 33px;
+
+    background-color: rgba(0, 128, 105, 0.918);
+    color: white;
+    padding: 2rem;
+
+
+  }
+
+  .top-heading{
+    /* background-color: cornflowerblue; */
+    width: 80%;
+    height: 23rem;
+  }
+
+  .calender{
+
+    width: 20%;
+    height: 19rem;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .day{
+
+    width: 8.5rem;
+    height: 4rem;
+    font-size: 45px;
+    text-align: center;
+    background-color: rgb(202, 200, 200);
+    color: #2d2d2d;
+    font-weight: bold;
+    margin-top:  1rem;
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+  }
+  .month{
+
+    color: black;
+    width: 8.5rem;
+    height: 4rem;
+    font-size: 33px;
+    text-align: center;
+    background-color: rgb(202, 200, 200);
+    margin-left: 0.5rem;
+
+  }
+  .year{
+    width: 8.5rem;
+    height: 4rem;
+    font-size: 33px;
+    text-align: center;
+    background-color: rgb(176, 174, 174);
+    color: black;
+    margin-left: 0.5rem;
+
+
+  }
+
+  .txt-tittle{
+    color: black;
+    font-size: 25px;
+    padding: 1.5rem;
+  }
+
+  .txt-meet{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 1.5rem;
+  }
+
+.txt-bottom{
+  color: black;
+  font-size: 20px;
+
+  padding: 2rem 1.5rem;
+}
+
+
+
+  /* .txt-ducs{
+    font-size: 45px;
+    color: black;
+
+  } */
