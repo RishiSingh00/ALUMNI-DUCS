@@ -1,4 +1,6 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -9,122 +11,123 @@
 
 .header {
     overflow: hidden;
-  	position: fixed; /* Set the navbar to fixed position */
-  	top: 0;
-    width : 100%;
-    height : 12rem;
-	z-index : 1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    width: 100%;
+    height: 12rem;
+    z-index: 2;
 }
 
-
 .inner_header {
-    height : 8.5rem;
-    width : 100%;
+    height: 8.5rem;
+    width: 100%;
     display: block;
-    margin : 0px;
+    margin: 0px;
 }
 
 .header_line_1 {
     background-color: #17242A;
-    height : 2.5rem;
-    width : 100%;
+    height: 2.5rem;
+    width: 100%;
     display: block;
 }
 
 .header_line_2 {
     background-color: #ffffff;
-    height : 6rem;
-    width : 100%;
+    height: 6rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5em 1em;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    
+
 }
 
 .logo_container {
     background-color: #17242A;
-    height : 11rem;
-    width : 30rem;
+    height: 11rem;
+    width: 30rem;
     z-index: 1;
     display: block;
-    top : 0px;
-    position : absolute;
-    left : 20rem;
+    top: 0px;
+    position: absolute;
+    left: 20rem;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 
 .header_line_2 #du_logo img {
-    height : 100%;
-    width : 6rem;
+    height: 100%;
+    width: 6rem;
 }
+
 .header_line_2 #du_logo {
-    padding : 10px 0px 10px 50px; 
+    padding: 10px 0px 10px 50px;
 }
 
 .logo_container img {
     width: 30rem;
     height: 10rem;
     padding-left: 2rem;
-    padding-top:1rem;
+    padding-top: 1rem;
 
 }
 
-
-  
-  .navbar-right {
+.navbar-right {
     display: flex;
     margin-right: 10rem;
-  }
-  
-  .navbar-right a {
+}
+
+.navbar-right a {
     margin-right: 8rem;
     font-size: 4rem;
     color: #17242A;
-    font-family: "bicyclettelight" ;
-  }
+    font-family: "bicyclettelight";
+}
 
-  @font-face {
+@font-face {
     font-family: 'bicyclettelight';
     src: url('font/Bicyclette-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 .home {
-    position : absolute;
-    width : 100%;
-    height : 62rem;
-    background-image:url(../img/slider1-3.jpg);
-}
-.quote {
-    font-family: "bicyclettelight";
-    color:white;
-    font-size: 8rem;
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-  }
-  
-.below_icon {
-    position: absolute;
-    height:4rem;
-    width:6rem;
-    left: 50%;
-    bottom:1rem;
-    align-items:flex-end;
-}
-.below_icon img{
-    height: 100%;
-    width:100%;
+    position: relative;
+    width: 100%;
+    height: 62rem;
+    background-image: url(../img/slider1-3.jpg);
+
 }
 
-#bold_alumni_text {
-    font-family: "roombold";
-    font-size:5rem;
+.quote {
+    font-family: "bicyclettelight";
+    color: white;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.below_icon {
+    position: absolute;
+    height: 4rem;
+    width: 6rem;
+    left: 50%;
+    bottom: 1rem;
+    align-items: flex-end;
+}
+
+.below_icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.bold_alumni_text {
+    font-family: "roombold", serif;
+    font-size: 5rem;
 }
 
 @font-face {
@@ -132,4 +135,155 @@
     src: url('font/Room-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
+
+/*shivpujan*/
+
+.alumni {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    background-image: url(../img/alBack.png);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parallax-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.parallax-item:first-child {
+    background: url(../img/slider1-3.jpg);
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    z-index: 1;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #3AAFA9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.name {
+    font-family: roombold, serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.batch {
+    font-family: sans-serif, serif;
+    font-size: 16px;
+    font-weight: 150;
+    color: #FFFFFF;
+}
+
+.description {
+    background-color: #263941;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: sans-serif, serif;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #3AAFA9;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #3AAFA9;
+}
+
+.swiper-navBtn {
+    color: #3AAFA9;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #3AAFA9;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #3AAFA9;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3AAFA9;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
+
+    .parallax-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .quote {
+        font-size: 4rem;
+    }
+
+    .bold_alumni_text {
+        font-size: 2.5rem;
+    }
+}
+
