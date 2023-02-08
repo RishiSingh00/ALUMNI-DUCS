@@ -1,24 +1,38 @@
-{
-    "news" : [
-        {
-            "title": "News",
-            "url": "https://picsum.photos/id/1/200/100",
-            "description":
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-        },
-        {
-            "title": "News",
-            "url": "https://picsum.photos/id/1/200/100",
-            "description":
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-        },
-        {
-            "title": "News Title",
-            "url": "https://picsum.photos/id/1/200/100",
-            "description":
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-        }
-
-    ]
-
-}
+[
+    {
+      "name": "Shivpujan 1",
+      "batch": "Batch 21-24",
+      "description":
+      "Senior Lead Developer, Google"
+    },{
+      "name": "Shivpujan 1",
+      "batch": "Batch 21-24",
+      "description":
+      "Senior Lead Developer, Google"
+    },{
+      "name": "Shivpujan 2",
+      "batch": "Batch 21-24",
+      "description":
+      "Senior Lead Developer, Google"
+    },{
+      "name": "Shivpujan 1",
+      "batch": "Batch 21-24",
+      "description":
+      "Senior Lead Developer, Google"
+    },{
+      "name": "Shivpujan 1",
+      "batch": "Batch 21-24",
+      "description":
+      "Senior Lead Developer, Google"
+    },{
+      "name": "Shivpujan 1",
+      "batch": "Batch 21-24",
+      "description":
+      "Senior Lead Developer, Google"
+    },{
+      "name": "Shivpujan 1",
+      "batch": "Batch 21-24",
+      "description":
+      "Senior Lead Developer, Google"
+    }
+]

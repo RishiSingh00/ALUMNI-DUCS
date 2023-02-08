@@ -1,4 +1,28 @@
+//alumni data
+const swiper_card = document.getElementById('cardsToDisplay');
+const alumni_slider_data = fetch("../js/data.json")
+    .then(results => results.json())
+    .then(data => {
+        console.log(data);
+        data.forEach((result, idx) => {
+            const content = `
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <h1 class="name">${result.name}</h1>
+                            <h2 class="batch">${result.batch}</h2>
+                        </div>
+                        <h1 class="description">${result.description}</h1>
+                    </div>
+            `;
+            // Append newyly created card element to the container
+            swiper_card.innerHTML += content;
+        });
+    })
 
+
+// const container = document.getElementById("");
+
+//swiper
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -16,7 +40,7 @@ var swiper = new Swiper(".slide-content", {
         prevEl: ".swiper-button-prev",
     },
 
-    breakpoints:{
+    breakpoints: {
         0: {
             slidesPerView: 1,
         },
