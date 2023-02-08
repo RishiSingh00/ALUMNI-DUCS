@@ -69,8 +69,7 @@
 .logo_container img {
     width: 30rem;
     height: 10rem;
-    padding-left: 2rem;
-    padding-top: 1rem;
+    padding: 1rem 2rem 2rem 2rem;
 
 }
 
@@ -132,19 +131,237 @@
 
 @font-face {
     font-family: 'roombold';
-    src: url('font/Room-Bold.ttf') format('truetype');
+    src: url('font/Room-Bold.ttf')format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-/*shivpujan*/
+@font-face {
+    font-family: 'posteramalight';
+    src: url('font/PosteramaLight.ttf')format('truetype');
+}
+/* ------------------RISHI-------------- */
+
+/* -----------------NAVNEET------------- */
+@import url(//db.onlinewebfonts.com/c/5c6682d0f00a759d2d735c090a6900fe?family=posteramalight);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#news h1{
+    font-family: 'posteramalight', cursive;
+    font-size: 30px;
+    color: #17242A;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+}
+hr{
+    background-color: #17242A;
+    height: 3px;
+    border-radius: 10px;
+}
+#news{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    padding: 50px;
+    height:10%;
+    margin-right: auto;
+}
+.news_area{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    padding-left: 100px;
+}
+#news_display{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+}
+.banner{
+    width: 60%;
+    height: 100%;
+    right:0px;
+    padding-left: 100px;
+    display: flex;
+    bottom:0px;
+}
+
+.banner img{
+    width: 100%;
+    height: 70%;
+    margin-top: auto;
+}
+.news_card{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.news_card .news_card_content{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} 
+
+.news_card_title h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #17242A;
+    text-transform: uppercase;
+    margin-bottom: auto;
+    letter-spacing: 2px;
+}
+
+.news_card_body{
+    margin-top: auto;
+}
+.news_card_body p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #1c313b;
+    text-transform: uppercase;
+}
+
+.news_card_body a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #17242A;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px){
+    .heading{
+        padding: 50px;
+        margin-right: 0;
+    }
+    .news_area{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    #news_display{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner{
+        width: 60%;
+        height: 100%;
+        float:right;
+    }
+    .banner img{
+        width: 100%;
+        height: 60%;
+    }
+    .news_card{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .news_card img{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news_card .news_card_content{
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .news_card_title h3{
+        font-family: 'posteramalight', cursive;
+        font-size: 15px;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: auto;
+    }
+
+    .news_card_body{
+        margin-top: auto;
+    }
+    .news_card_body p{
+        font-family: 'posteramalight', cursive;
+        font-size: 10px;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    .news_card_body a{
+        font-family: 'posteramalight', cursive;
+        font-size: 10px;
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+/*Scroll bar*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8A8A8A; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4E4E4E; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #212121; 
+}
+
+/* -----------------NAVNEET------------- */
+/*-------------SHIVPUJAN-----------------*/
 
 .alumni {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 40rem;
     background-image: url(../img/alBack.png);
 }
 
@@ -211,7 +428,7 @@ html {
     background-color: #263941;
     font-size: 14px;
     color: #FFFFFF;
-    font-family: sans-serif, serif;
+    font-family: 'bicyclettelight', serif;
     text-align: center;
     padding: 1.5rem;
     border-bottom-left-radius: 12px;
@@ -286,4 +503,6 @@ html {
         font-size: 2.5rem;
     }
 }
+
+/* -------------------SHIVPUJAN-------------------- */
 
