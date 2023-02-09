@@ -296,6 +296,10 @@ html {
     padding: 3rem 2rem 2rem 5rem;
     /* background-color: lightblue; */
 }
+  .img-poster{
+    width:90%;
+    height:95%;
+  }
 
 .content-area {
     width: 65%;
@@ -319,35 +323,44 @@ html {
     height: 14rem;
     /* background-color: rgb(82, 82, 32); */
 }
+  .register{
+    padding-top: 2rem;
+    padding-right: 8rem;
 
-.countdown {
-    width: 68.5%;
-    height: 13rem;
-    font-size: 70px;
-    color: white;
+}
 
+  .register-button{
+  border: none;
+  color: white;
+  padding: 1.5rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+
+display: inline-block;
+  font-size: 33px;
+  background-color: rgba(0, 128, 105, 0.918);
+
+
+/* countdown start */
+  .countdown{
+    display: flex;
+    width:68.5%;
+    height:13rem;
+    padding-left: 6rem;
+    font-size: 60px;
+    color: #2d2d2d;
     text-align: center;
-    background-color: darkslategray;
-}
+    /* background-color: darkslategray; */
+  }
+  .countdown div{
+   flex-basis: 100px;
+  }
 
-.register {
-    width: 25%;
-    height: 7rem;
-    /* background-color:grey; */
-    padding-top: 6rem;
+  .countdown div p{
+    font-size: 60px;
+    margin-bottom: -14;
+   }
 
-}
-
-.txt-register {
-
-    font-size: 33px;
-
-    background-color: rgba(0, 128, 105, 0.918);
-    color: white;
-    padding: 2rem;
-
-
-}
 
 .top-heading {
     /* background-color: cornflowerblue; */
@@ -369,11 +382,12 @@ html {
 
     width: 8.5rem;
     height: 4rem;
-    font-size: 45px;
+    font-family: 'roombold';
+    font-size: 30px;
     text-align: center;
     background-color: rgb(202, 200, 200);
     color: #2d2d2d;
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: 1rem;
     margin-left: 0.5rem;
     padding-top: 1rem;
@@ -381,10 +395,12 @@ html {
 
 .month {
 
-    color: black;
+    color: #2d2d2d;
     width: 8.5rem;
     height: 4rem;
-    font-size: 33px;
+    font-family: 'roombold';
+    font-weight: 200;
+    font-size: 20px;
     text-align: center;
     background-color: rgb(202, 200, 200);
     margin-left: 0.5rem;
@@ -393,32 +409,45 @@ html {
 
 .year {
     width: 8.5rem;
-    height: 4rem;
-    font-size: 33px;
+    height: 3rem;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'roombold';
     text-align: center;
     background-color: rgb(176, 174, 174);
-    color: black;
+    color: #2d2d2d;
     margin-left: 0.5rem;
+    padding-top: 1rem;
 
 
 }
 
 .txt-tittle {
-    color: black;
+    color: #757575;
     font-size: 25px;
     padding: 1.5rem;
-}
+margin-left: 5.4rem;
+    font-family: 'roombold';
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    /* font-family: 'Montserrat'; */
+  }
 
 .txt-meet {
-    color: black;
-    font-size: 50px;
-    font-weight: bold;
-    padding-left: 1.5rem;
+    color: rgb(80, 79, 79);
+    font-size: 60px;
+    /* font-weight: bold; */
+    padding-left: 6rem;
+    font-family: 'roombold';
 }
 
 .txt-bottom {
-    color: black;
+    color: #757575;
     font-size: 20px;
-
+  margin-left: 4rem;
     padding: 2rem 1.5rem;
+  font-weight: lighter;
 }
+
+
+
