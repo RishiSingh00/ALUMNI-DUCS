@@ -510,7 +510,7 @@ html {
 
 .upcoming-event {
     display: flex;
-    height: 40rem;
+    height: 35rem;
     justify-content: space-between;
     background-color: #FAF9F9;
 
@@ -519,13 +519,15 @@ html {
 
 .img-area {
     width: 35%;
-    padding: 3rem 2rem 2rem 5rem;
+    
+    padding: 3rem 0rem 4rem 0rem;
+    margin-left: 13rem;
     /* background-color: lightblue; */
 }
 
 .img-poster {
-    width: 90%;
-    height: 95%;
+    width: 97%;
+    height: 97%;
 }
 
 .content-area {
@@ -534,13 +536,14 @@ html {
     display: flex;
     height: auto;
     flex-direction: column;
-    padding: 10px;
+    padding: 1rem;
+    margin-right: 10rem;
 }
 
 .top-area {
     display: flex;
     width: 100%;
-    height: 24rem;
+    height: 20rem;
     /* background-color: yellow; */
 }
 
@@ -552,19 +555,22 @@ html {
 }
 
 .register {
-    padding-top: 2rem;
-    padding-right: 8rem;
+   
+    padding-top: 1rem;
+    padding-right: 6rem;
+    padding-left: 4rem;
 
 }
 
 .register-button {
     display: inline-block;
-    font-size: 33px;
+    font-size: 25px;
     font-family: 'maderabold';
     background-color: rgba(0, 128, 105, 0.918);
     border: none;
     color: white;
-    padding: 1.5rem 3.2rem;
+    /* padding: 1.5rem 3.2rem; */
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
 }
@@ -612,11 +618,11 @@ html {
 .day {
 
     width: 8.5rem;
-    height: 5rem;
+    height: 6rem;
     font-family: 'maderabold';
     font-size: 30px;
     text-align: center;
-    background-color: rgb(202, 200, 200);
+    background-color: #ebebeb;
     color: #2d2d2d;
     font-weight: bolder;
     margin-top: 1rem;
@@ -628,12 +634,12 @@ html {
 
     color: #2d2d2d;
     width: 8.5rem;
-    height: 4rem;
+    height: 3rem;
     font-family: 'posteramalight';
     font-weight: 200;
     font-size: 20px;
     text-align: center;
-    background-color: rgb(202, 200, 200);
+    background-color: #ebebeb;
     margin-left: 0.5rem;
 
 }
@@ -645,8 +651,8 @@ html {
     font-weight: 200;
     font-family: 'posteramalight';
     text-align: center;
-    background-color: rgb(176, 174, 174);
-    color: #2d2d2d;
+    background-color: #dadada;
+    color:  #595959;
     margin-left: 0.5rem;
     padding-top:.5rem;
 
@@ -669,16 +675,22 @@ html {
     /* font-weight: bold; */
     padding-left: 6rem;
     font-family: 'roombold';
+    letter-spacing: 0.03em;
 }
 
 .txt-bottom {
     color: #757575;
     font-family: 'posteramalight';
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 4rem;
-    padding: 2rem 1.5rem;
+    /* padding: 2rem 1.5rem; */
+    padding-left: 2rem;
+   
     font-weight: lighter;
 }
 
-
+.map_logo{
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
