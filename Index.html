@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
 
@@ -24,7 +24,7 @@
             <div class="header_line_2">
                 <!-- DU100 LOGO | LEFT -->
                 <div id="du_logo">
-                    <img src="img/DU100.jpg">
+                    <img src="img/DU100.jpg" alt="du_100_image">
                 </div>
                 <!-- NAVBAR ELEMENTS | RIGHT -->
                 <ul class="navbar-right">
@@ -41,7 +41,7 @@
             </div>
             <!-- DUCS LOGO | MIDDLE -->
             <div class="logo_container">
-                <img src="img/Group 13.png">
+                <img src="img/Group 13.png" alt="du_logo">
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
 
     <div class="upcoming-event">
         <div class="img-area">
-            <img class="img-poster" src="img/AlumniMeetPoster.png">
+            <img class="img-poster" src="img/AlumniMeetPoster.png" alt="meet_poster">
         </div>
         <div class="content-area">
             <div class="top-area">
@@ -71,7 +71,7 @@
                     <h5 class="txt-tittle">UPCOMING EVENT</h5>
                     <h2 class="txt-meet">ALUMNI MEET</h2>
 
-                    <h3 class="txt-bottom"><a href="Index.html"><img src="img/location_logo.png" height="18rem"></a>
+                    <h3 class="txt-bottom"><a href="Index.html"><img src="img/location_logo.png" height="18rem" alt="location"></a>
                         DEPARTMENT OF COMPUTER SCIENCE</h3>
                 </div>
                 <div class="calender">
@@ -107,11 +107,8 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <!-- upcoming events  end -->
 
-    <!-- ---------------------- -->
     <div id="news">
         <div class="heading">
             <h1>Latest News</h1>
@@ -147,22 +144,22 @@
 <!-- countdown script start -->
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
+    const countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
 
     // Update the count-down every 1 second
-    var x = setInterval(function () {
+    const x = setInterval(function () {
 
         // Get today's date and time
-        var now = new Date().getTime();
+        const now = new Date().getTime();
 
         // Find the distance between now and the count-down date
-        var distance = countDownDate - now;
+        const distance = countDownDate - now;
 
         // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
         // Ensure double digits for days, hours, minutes and seconds
@@ -177,7 +174,7 @@
         document.getElementById("minutes").innerHTML = minutes;
         document.getElementById("seconds").innerHTML = " :  " + seconds;
 
-        // If the count down is finished, write some text
+        // If the count-down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
             document.getElementById("days").innerHTML = ":)";
