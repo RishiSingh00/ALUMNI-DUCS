@@ -1,6 +1,6 @@
 //alumni data
 const swiper_card = document.getElementById('cardsToDisplay');
-const alumni_slider_data = fetch("../js/data.json")
+const alumni_slider_data = fetch("../data/data.json")
     .then(results => results.json())
     .then(data => {
         console.log(data);
