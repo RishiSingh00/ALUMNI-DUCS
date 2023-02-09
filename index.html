@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DUCS Alumni</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
-    <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/ducs.png"/>
 </head>
@@ -19,7 +15,6 @@
     <div class="header">
         <div class="inner_header">
             <div class="header_line_1">
-                <!-- TODO : SOCIALS -->
             </div>
             <div class="header_line_2">
                 <!-- DU100 LOGO | LEFT -->
@@ -28,8 +23,8 @@
                 </div>
                 <!-- NAVBAR ELEMENTS | RIGHT -->
                 <ul class="navbar-right">
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">ALUMNI</a></li>
+                    <li><a href="#news">EVENTS</a></li>
+                    <li><a href="#alumni">ALUMNI</a></li>
                     <li><a href="#">MEMORIES</a></li>
                     <li><a href="pages/team.html">TEAM</a></li>
                 </ul>
@@ -43,6 +38,7 @@
 </header>
 
 <main>
+    <!--home-->
     <div id="parallax" class="home parallax-item">
         <div class="quote">
             <p>“Nobody is bothered<br>
@@ -54,7 +50,7 @@
         </div>
     </div>
 
-    <!-- upcoming events start-->
+    <!--upcoming events start-->
 
     <div class="upcoming-event">
         <div class="img-area">
@@ -68,7 +64,7 @@
 
                     <h3 class="txt-bottom">
                         <a href="index.html">
-                        <img class="map_logo" src="img/location_logo.png" alt="loaction">
+                            <img class="map_logo" src="img/location_logo.png" alt="loaction">
                         </a>
                         DEPARTMENT OF COMPUTER SCIENCE
                     </h3>
@@ -107,7 +103,7 @@
         </div>
     </div>
 
-
+    <!--news section-->
     <div id="news">
         <div class="heading">
             <h1>Latest News</h1>
@@ -122,9 +118,9 @@
         </div>
     </div>
     <script type="module" src="js/script.js"></script>
-    <!-------------------------->
 
-    <div class="alumni">
+    <!--alumni section-->
+    <div id="alumni" class="alumni">
         <div class="slide-container swiper">
             <div class="slide-content">
                 <div id="cardsToDisplay" class="card-wrapper swiper-wrapper">
@@ -140,59 +136,11 @@
 </main>
 
 <footer></footer>
-<script src="" async defer></script>
-<!-- countdown script start -->
-<script>
-    // Set the date we're counting down to
-    const countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
-
-    // Update the count-down every 1 second
-    const x = setInterval(function () {
-
-        // Get today's date and time
-        const now = new Date().getTime();
-
-        // Find the distance between now and the count-down date
-        const distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-        // Ensure double digits for days, hours, minutes and seconds
-        days = (days < 10) ? "0" + days : days;
-        hours = (hours < 10) ? "0" + hours : hours;
-        minutes = (minutes < 10) ? "0" + minutes : minutes;
-        seconds = (seconds < 10) ? "0" + seconds : seconds;
-
-        // Display the result in the element with respective ids"
-        document.getElementById("days").innerHTML = days + " : ";
-        document.getElementById("hours").innerHTML = hours + " : ";
-        document.getElementById("minutes").innerHTML = minutes + " : ";
-        document.getElementById("seconds").innerHTML = seconds;
-
-        // If the count-down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("days").innerHTML = ":)";
-            document.getElementById("hours").innerHTML = " :>";
-            document.getElementById("minutes").innerHTML = ":)";
-            document.getElementById("seconds").innerHTML = ":>";
-
-        }
-    }, 1000);
-</script>
-<!-- countdown script end -->
 
 </body>
-<!--     Swiper JS -->
-<!--    Uncomment this line-->
-<script src="js/swiper-bundle.min.js"></script>
 
-<!--     JavaScript -->
-<!--    Uncomment this line-->
+<!--Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<!--JavaScript -->
 <script src="js/script.js"></script>
 </html>
