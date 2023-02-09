@@ -63,7 +63,7 @@
 
     <div class="upcoming-event">
         <div class="img-area">
-            <img src="img/AlumniMeetPoster.png" style="width:90%;height:95%">
+            <img class="img-poster" src="img/AlumniMeetPoster.png">
         </div>
         <div class="content-area">
             <div class="top-area">
@@ -72,7 +72,7 @@
                     <h2 class="txt-meet">ALUMNI MEET</h2>
 
                     <h3 class="txt-bottom"><a href="Index.html"><img src="img/location_logo.png" height="18rem"></a>
-                        DEPARTMENT OF CUMPUTER SCIENCE</h3>
+                        DEPARTMENT OF COMPUTER SCIENCE</h3>
                 </div>
                 <div class="calender">
                     <span class="day">25</span>
@@ -82,8 +82,28 @@
 
             </div>
             <div class="bottom-area">
-                <div class="countdown"> countdown</div>
-                <div class="register"><span class="txt-register">REGISTER</span></div>
+                <div class="countdown">
+                    <div>
+                        <p id="days">00</p>
+                        <span>Days</span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <p id="minutes">00</p>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <p id="seconds">00</p>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+
+                <div class="register">
+                    <button class="register-button">REGISTER</button>
+                </div>
             </div>
         </div>
     </div>
@@ -93,7 +113,7 @@
 
     <!-- ---------------------- -->
     <div id="news">
-        <div  class="heading">
+        <div class="heading">
             <h1>Latest News</h1>
             <hr>
         </div>
@@ -120,32 +140,56 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    <div class="parallax-item">
-        <h2>Div 2</h2>
-    </div>
-    <div class="parallax-item">
-        <h2>Div 3</h2>
-    </div>
-    <div class="parallax-item">
-        <h2>Div 4</h2>
-    </div>
-    <!--            <section>-->
-    <!--                <div id="parallax" class="parallax-item">-->
-    <!--                    <h2>Div 1</h2>-->
-    <!--                </div>-->
-    <!--                <div class="parallax-item">-->
-    <!--                    <h2>Div 2</h2>-->
-    <!--                </div>-->
-    <!--                <div class="parallax-item">-->
-    <!--                    <h2>Div 3</h2>-->
-    <!--                </div>-->
-    <!--                <div class="parallax-item">-->
-    <!--                    <h2>Div 4</h2>-->
-    <!--                </div>-->
-    <!--            </section>-->
 </main>
 
 <footer></footer>
+<script src="" async defer></script>
+<!-- countdown script start -->
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+        // Ensure double digits for days, hours, minutes and seconds
+        days = (days < 10) ? "0" + days : days;
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10) ? "0" + minutes : minutes;
+        seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+        // Display the result in the element with respective ids"
+        document.getElementById("days").innerHTML = days + " :";
+        document.getElementById("hours").innerHTML = hours + " :";
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = " :  " + seconds;
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days").innerHTML = ":)";
+            document.getElementById("hours").innerHTML = " :>";
+            document.getElementById("minutes").innerHTML = ":)";
+            document.getElementById("seconds").innerHTML = ":>";
+
+        }
+    }, 1000);
+</script>
+<!-- countdown script end -->
+
 </body>
 <!--     Swiper JS -->
 <!--    Uncomment this line-->
