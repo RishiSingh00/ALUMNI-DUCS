@@ -65,7 +65,7 @@
 
 .logo_container img {
     width: 30rem;
-    height: 10rem;
+    height: 12rem;
     padding: 1rem 2rem 2rem 2rem;
 
 }
@@ -89,6 +89,10 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'maderabold';
+    src: url('font/Madera-Bold.ttf');
+}
 .home {
     position: relative;
     width: 100%;
@@ -502,12 +506,13 @@ html {
 
 /* -------------------SHIVPUJAN-------------------- */
 
-/* -------------------SHIVPUJAN-------------------- */
+/* -------------------DEEPAK-------------------- */
 
 .upcoming-event {
     display: flex;
     height: 40rem;
     justify-content: space-between;
+    background-color: #FAF9F9;
 
 }
 
@@ -555,6 +560,7 @@ html {
 .register-button {
     display: inline-block;
     font-size: 33px;
+    font-family: 'maderabold';
     background-color: rgba(0, 128, 105, 0.918);
     border: none;
     color: white;
@@ -570,21 +576,23 @@ html {
     height: 13rem;
     padding-left: 6rem;
     font-size: 60px;
-    color: #2d2d2d;
+    color: #4E4E4E;
+    font-family: 'posteramalight';
     text-align: center;
     /* background-color: darkslategray; */
 }
 
 .countdown div {
-    flex-basis: 100px;
+    flex-basis: 105px;
 }
 
 .countdown div p {
-    font-size: 60px;
+    font-size: 55px;
     margin-bottom: -14px;
 }
-
-
+.countdown span {
+    font-size : 20px;
+}
 .top-heading {
     /* background-color: cornflowerblue; */
     width: 80%;
@@ -604,8 +612,8 @@ html {
 .day {
 
     width: 8.5rem;
-    height: 4rem;
-    font-family: 'roombold';
+    height: 5rem;
+    font-family: 'maderabold';
     font-size: 30px;
     text-align: center;
     background-color: rgb(202, 200, 200);
@@ -621,7 +629,7 @@ html {
     color: #2d2d2d;
     width: 8.5rem;
     height: 4rem;
-    font-family: 'roombold';
+    font-family: 'posteramalight';
     font-weight: 200;
     font-size: 20px;
     text-align: center;
@@ -635,13 +643,12 @@ html {
     height: 3rem;
     font-size: 20px;
     font-weight: 200;
-    font-family: 'roombold';
+    font-family: 'posteramalight';
     text-align: center;
     background-color: rgb(176, 174, 174);
     color: #2d2d2d;
     margin-left: 0.5rem;
-    padding-top: 1rem;
-
+    padding-top:.5rem;
 
 }
 
@@ -666,6 +673,7 @@ html {
 
 .txt-bottom {
     color: #757575;
+    font-family: 'posteramalight';
     font-size: 20px;
     margin-left: 4rem;
     padding: 2rem 1.5rem;
