@@ -524,7 +524,7 @@ html {
 .img-area {
     width: 35%;
 
-    padding: 3rem 0rem 4rem 0rem;
+    padding: 3rem 0 4rem 0;
     margin-left: 13rem;
     /* background-color: lightblue; */
 }
@@ -568,15 +568,16 @@ html {
 
 .register-button {
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'maderabold', serif;
     background-color: rgba(0, 128, 105, 0.918);
     border: none;
     color: white;
     /* padding: 1.5rem 3.2rem; */
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 /* countdown start */
