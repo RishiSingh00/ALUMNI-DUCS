@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
 
@@ -24,7 +24,7 @@
             <div class="header_line_2">
                 <!-- DU100 LOGO | LEFT -->
                 <div id="du_logo">
-                    <img src="img/DU100.jpg">
+                    <img src="img/DU100.jpg" alt="du_100_image">
                 </div>
                 <!-- NAVBAR ELEMENTS | RIGHT -->
                 <ul class="navbar-right">
@@ -41,7 +41,7 @@
             </div>
             <!-- DUCS LOGO | MIDDLE -->
             <div class="logo_container">
-                <img src="img/Group 13.png">
+                <img src="img/Group 13.png" alt="du_logo">
             </div>
         </div>
     </div>
@@ -107,11 +107,8 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <!-- upcoming events  end -->
 
-    <!-- ---------------------- -->
     <div id="news">
         <div class="heading">
             <h1>Latest News</h1>
@@ -125,13 +122,14 @@
             </div>
         </div>
     </div>
-    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/script.js"></script>
     <!-------------------------->
+
     <div class="alumni">
         <div class="slide-container swiper">
             <div class="slide-content">
                 <div id="cardsToDisplay" class="card-wrapper swiper-wrapper">
-
+                <!--Data is displayed over here through data.json-->
                 </div>
             </div>
 
@@ -147,22 +145,22 @@
 <!-- countdown script start -->
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
+    const countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
 
     // Update the count-down every 1 second
-    var x = setInterval(function () {
+    const x = setInterval(function () {
 
         // Get today's date and time
-        var now = new Date().getTime();
+        const now = new Date().getTime();
 
         // Find the distance between now and the count-down date
-        var distance = countDownDate - now;
+        const distance = countDownDate - now;
 
         // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
         // Ensure double digits for days, hours, minutes and seconds
@@ -177,7 +175,7 @@
         document.getElementById("minutes").innerHTML = minutes + " : ";
         document.getElementById("seconds").innerHTML = seconds;
 
-        // If the count down is finished, write some text
+        // If the count-down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
             document.getElementById("days").innerHTML = ":)";
