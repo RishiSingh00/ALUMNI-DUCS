@@ -188,7 +188,7 @@ hr{
     padding-left: 100px;
 }
 #news_display{
-    width: 40%;
+    width: 50%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -196,7 +196,7 @@ hr{
     overflow-y: scroll;
 }
 .banner{
-    width: 60%;
+    width: 50%;
     height: 100%;
     right:0;
     padding-left: 100px;
