@@ -57,13 +57,13 @@
         <div class="below_icon">
             <img src="img/Group 8.png" alt="Slide Down">
         </div>
-</div>
+    </div>
 
-             <!-- upcoming events start-->
+    <!-- upcoming events start-->
 
     <div class="upcoming-event">
         <div class="img-area">
-            <img class ="img-poster" src="img/AlumniMeetPoster.png">
+            <img class="img-poster" src="img/AlumniMeetPoster.png">
         </div>
         <div class="content-area">
             <div class="top-area">
@@ -82,26 +82,28 @@
 
             </div>
             <div class="bottom-area">
-                <div class="countdown"> <div>
-                                   <p id="days">00</p>
-                                    <span>Days</span>
-                                </div>
-                                <div >
-                                   <p id="hours">00</p>
-                                    <span>Hours</span>
-                                </div>
-                                <div >
-                                   <p id="minutes" >00</p>
-                                   <span>Minutes</span>
-                                </div>
-                                <div>
-                <p id="seconds" >00</p>
-                                     <span>Seconds</span>
-                                </div>
-                            </div>
+                <div class="countdown">
+                    <div>
+                        <p id="days">00</p>
+                        <span>Days</span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <p id="minutes">00</p>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <p id="seconds">00</p>
+                        <span>Seconds</span>
+                    </div>
+                </div>
 
-                            <div class="register">
-                                <button class="register-button">REGISTER</button></div>
+                <div class="register">
+                    <button class="register-button">REGISTER</button>
+                </div>
             </div>
         </div>
     </div>
@@ -111,7 +113,7 @@
 
     <!-- ---------------------- -->
     <div id="news">
-        <div  class="heading">
+        <div class="heading">
             <h1>Latest News</h1>
             <hr>
         </div>
@@ -138,15 +140,6 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    <div class="parallax-item">
-        <h2>Div 2</h2>
-    </div>
-    <div class="parallax-item">
-        <h2>Div 3</h2>
-    </div>
-    <div class="parallax-item">
-        <h2>Div 4</h2>
-    </div>
 </main>
 
 <footer></footer>
@@ -157,44 +150,44 @@
     var countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
 
     // Update the count down every 1 second
-    var x = setInterval(function() {
+    var x = setInterval(function () {
 
-      // Get today's date and time
-      var now = new Date().getTime();
+        // Get today's date and time
+        var now = new Date().getTime();
 
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-      // Ensure double digits for days, hours, minutes and seconds
-      days = (days < 10) ? "0" + days : days;
-      hours = (hours < 10) ? "0" + hours : hours;
-      minutes = (minutes < 10) ? "0" + minutes : minutes;
-      seconds = (seconds < 10) ? "0" + seconds : seconds;
+        // Ensure double digits for days, hours, minutes and seconds
+        days = (days < 10) ? "0" + days : days;
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10) ? "0" + minutes : minutes;
+        seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-      // Display the result in the element with respective ids"
-      document.getElementById("days").innerHTML = days+" :";
-      document.getElementById("hours").innerHTML = hours+" :";
-      document.getElementById("minutes").innerHTML = minutes;
-      document.getElementById("seconds").innerHTML = " :  "+seconds;
+        // Display the result in the element with respective ids"
+        document.getElementById("days").innerHTML = days + " :";
+        document.getElementById("hours").innerHTML = hours + " :";
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = " :  " + seconds;
 
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("days").innerHTML = ":)";
-        document.getElementById("hours").innerHTML = " :>";
-        document.getElementById("minutes").innerHTML = ":)";
-        document.getElementById("seconds").innerHTML = ":>";
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days").innerHTML = ":)";
+            document.getElementById("hours").innerHTML = " :>";
+            document.getElementById("minutes").innerHTML = ":)";
+            document.getElementById("seconds").innerHTML = ":>";
 
-      }
+        }
     }, 1000);
-  </script>
+</script>
 <!-- countdown script end -->
 
 </body>
