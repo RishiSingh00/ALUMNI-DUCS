@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DUCS Alumni</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/ducs.png"/>
 </head>
@@ -15,6 +19,7 @@
     <div class="header">
         <div class="inner_header">
             <div class="header_line_1">
+                <!-- TODO : SOCIALS -->
             </div>
             <div class="header_line_2">
                 <!-- DU100 LOGO | LEFT -->
@@ -25,20 +30,19 @@
                 <ul class="navbar-right">
                     <li><a href="#news">EVENTS</a></li>
                     <li><a href="#alumni">ALUMNI</a></li>
-                    <li><a href="#">MEMORIES</a></li>
+                    <li><a href="pages/gallery.html">MEMORIES</a></li>
                     <li><a href="pages/team.html">TEAM</a></li>
                 </ul>
             </div>
             <!-- DUCS LOGO | MIDDLE -->
             <div class="logo_container">
-                <img src="img/Group 13.png" alt="du_logo">
+                <a href="#parallax"><img src="img/Group 13.png" alt="du_logo"></a>
             </div>
         </div>
     </div>
 </header>
 
 <main>
-    <!--home-->
     <div id="parallax" class="home parallax-item">
         <div class="quote">
             <p>“Nobody is bothered<br>
@@ -50,7 +54,7 @@
         </div>
     </div>
 
-    <!--upcoming events start-->
+    <!-- upcoming events start-->
 
     <div class="upcoming-event">
         <div class="img-area">
@@ -64,7 +68,7 @@
 
                     <h3 class="txt-bottom">
                         <a href="index.html">
-                            <img class="map_logo" src="img/location_logo.png" alt="loaction">
+                        <img class="map_logo" src="img/location_logo.png" alt="loaction">
                         </a>
                         DEPARTMENT OF COMPUTER SCIENCE
                     </h3>
@@ -103,7 +107,7 @@
         </div>
     </div>
 
-    <!--news section-->
+
     <div id="news">
         <div class="heading">
             <h1>Latest News</h1>
@@ -118,9 +122,9 @@
         </div>
     </div>
     <script type="module" src="js/script.js"></script>
+    <!-------------------------->
 
-    <!--alumni section-->
-    <div id="alumni" class="alumni">
+    <div id="alumni">
         <div class="slide-container swiper">
             <div class="slide-content">
                 <div id="cardsToDisplay" class="card-wrapper swiper-wrapper">
@@ -134,13 +138,96 @@
         </div>
     </div>
 </main>
+<footer>
+    <div class="footer-container">
+        <div class="container">
+            <div class="box-1">
+                <img src="img/ducs.png"  class="logo" >
+                
+                <p class="para-txt">The Department of Computer Science was established in the year 1981 with the objective of imparting quality education in the field of Computer Science. The Department has modern facilities for teaching, learning and research.</p>
+            </div>
+            <div class="box-2">
+                <h3 class="heading-txt">SOCIALS<div class="underline-social"><span></span></div></h3>>
+                
+                <ul>
+                    <li><img src="img/LinkedIn - Negative.png" height="30px" ></li>
+                    <li><img src="img/Instagram - Original.png" height="30px" ></li>
+                    <li><img src="img/YouTube - Negative.png" height="30px" ></li>
+                    <li><img src="img/Facebook - Original.png" height="30px" ></li>
+                 </ul>
+            </div>
+            <div class="box-3">
+                <h3 class="heading-txt">ADDRESS<div class="underline-address"><span></span></div></h3>
+                <p  class="para-txt">Department of  Computer Science</p>
+                <p class="para-txt">First floor,Faculty of Mathematical Science</p>
+                <p class="para-txt">Opposite Daulat Ram College</p>
+                <p class="para-txt">University of Delhi,11007</p>
+                <p class="email-id">office@cs.du.ac.in<p>
+                <p class="phone-no">+91-11-27667591</p>
+            </div>
+            <div class="box-4">
+                <h3 class="heading-txt">MAP<div class="underline-map"><span></span></div></h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d4808.940999539585!2d77.20547023061032!3d28.687397490087406!3m2!1i1024!2i768!4f13.1!2m1!1sDelhi%20University%2C%20Department%20of%20Computer%20Science!5e0!3m2!1sen!2sin!4v1675779142551!5m2!1sen!2sin"width="200rem" height="200rem" style="border:0;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+          </div>
+          
+    </div>
+    <p class="copy-right">&copy; Department of Computer Science, University of Delhi</p>
+</footer>
+<script src="" async defer></script>
+<!-- countdown script start -->
+<script>
+    // Set the date we're counting down to
+    const countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
 
-<footer></footer>
+    // Update the count-down every 1 second
+    const x = setInterval(function () {
+
+        // Get today's date and time
+        const now = new Date().getTime();
+
+        // Find the distance between now and the count-down date
+        const distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+        // Ensure double digits for days, hours, minutes and seconds
+        days = (days < 10) ? "0" + days : days;
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10) ? "0" + minutes : minutes;
+        seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+        // Display the result in the element with respective ids"
+        document.getElementById("days").innerHTML = days + " : ";
+        document.getElementById("hours").innerHTML = hours + " : ";
+        document.getElementById("minutes").innerHTML = minutes + " : ";
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // If the count-down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days").innerHTML = ":)";
+            document.getElementById("hours").innerHTML = " :>";
+            document.getElementById("minutes").innerHTML = ":)";
+            document.getElementById("seconds").innerHTML = ":>";
+
+        }
+    }, 1000);
+</script>
+<!-- countdown script end -->
 
 </body>
-
-<!--Swiper JS -->
+<!--     Swiper JS -->
+<!--    Uncomment this line-->
 <script src="js/swiper-bundle.min.js"></script>
-<!--JavaScript -->
+
+<!--     JavaScript -->
+<!--    Uncomment this line-->
 <script src="js/script.js"></script>
 </html>
