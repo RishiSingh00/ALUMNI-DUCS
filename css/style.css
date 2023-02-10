@@ -87,6 +87,9 @@
     color: black;
 }
 
+.navbar-right a:hover{
+    color:#3AAFA9;
+}
 @font-face {
     font-family: 'bicyclettelight';
     src: url('font/Bicyclette-Light.ttf') format('truetype');
@@ -360,12 +363,12 @@ hr{
 /* -----------------NAVNEET------------- */
 /*-------------SHIVPUJAN-----------------*/
 
-.alumni {
+#alumni {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    min-height: 40rem;
+    min-height: 30rem;
     background-image: url(../img/alBack.png);
 }
 
@@ -822,7 +825,7 @@ animation: moving 2s linear infinite;
   .box-1 {
     /* background-color: red; */
     padding-left: 50px;
-    
+    padding-top:5px;
     width: 30%;
     height: 200px;
   }
