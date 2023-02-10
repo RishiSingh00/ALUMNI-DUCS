@@ -61,7 +61,7 @@ width:100%;
 /* media query to enable animation for only those who want it */
 @media (prefers-reduced-motion: no-preference) {
     .moving-text{
-        animation: marquee 2s linear infinite;
+        animation: marquee 5s linear infinite;
     }
 }
 
