@@ -19,9 +19,32 @@
 }
 
 .inner_header {
+    position: relative;
     height: 8.5rem;
     width: 100%;
     display: block;
+}
+
+.under_construction h1{
+    position: relative;
+    z-index: 1;
+    font-family: "roombold";
+    font-size: 1rem;
+    color:aliceblue;
+    left: 50%;
+    width:15rem;
+    height:100%;
+    text-align: center;
+    background-color: #000;
+}
+.under_construction {
+    display: block;
+    position: relative;
+/* border-top: solid 10px;
+border-image: repeating-linear-gradient( -75deg, yellow, yellow 10px, black 10px, black 20px) 20; */
+background: repeating-linear-gradient(-75deg,yellow , yellow 5px, black 5px, black 10px);
+height:15px;
+width:100%;   
 }
 
 .header_line_1 {
@@ -44,6 +67,8 @@
 }
 
 .logo_container {
+    /*border-radius : bottom top top bottom  */
+    border-radius: 0rem 0rem 3rem 3rem;
     background-color: #17242A;
     height: 11rem;
     width: 30rem;
@@ -51,18 +76,18 @@
     display: block;
     top: 0;
     position: absolute;
-    left: 20rem;
+    left: 10rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 
 .header_line_2 #du_logo img {
-    height: 100%;
-    width: 6rem;
+    height: 90%;
+    width: 4rem;
 }
 
 .header_line_2 #du_logo {
-    padding: 10px 0 10px 50px;
+    padding: 10px 30px 10px 50px;
 }
 
 .logo_container img {
@@ -75,6 +100,8 @@
 .navbar-right {
     display: flex;
     margin-right: 10rem;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .navbar-right li {
@@ -104,6 +131,7 @@
 .home {
     position: relative;
     width: 100%;
+    margin-top:5rem;
     height: 62rem;
     background-image: url(../img/slider1-3.jpg);
 }
