@@ -4,3 +4,5 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 /.vscode
+404.html
+firebase-debug.log
