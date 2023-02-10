@@ -26,7 +26,7 @@
 }
 
 .under_construction h1{
-    position: relative;
+    position: absolute;
     z-index: 1;
     font-family: "roombold";
     font-size: 1rem;
@@ -38,13 +38,31 @@
     background-color: #000;
 }
 .under_construction {
-    display: block;
     position: relative;
+    display: flex;
 /* border-top: solid 10px;
 border-image: repeating-linear-gradient( -75deg, yellow, yellow 10px, black 10px, black 20px) 20; */
 background: repeating-linear-gradient(-75deg,yellow , yellow 5px, black 5px, black 10px);
 height:15px;
-width:100%;   
+width:100%;
+}
+
+/* Makes the animation pause on hover */
+.moving-text:hover{
+    animation-play-state: paused;
+}
+
+/* The animation */
+@keyframes marquee{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+    .moving-text{
+        animation: marquee 2s linear infinite;
+    }
 }
 
 .header_line_1 {
