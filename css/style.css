@@ -699,3 +699,173 @@ html {
   width: 1.5rem;
 }
 
+/* footer start */
+.footer-container{
+
+    height:270px ;
+    /* background: linear-gradient(to top, #4c433e, #ff935e); */
+   
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .para-txt {
+    font-size: 15px;
+    /* padding-top: 1px; */
+
+    font-family: 'posteramalight', serif;
+    /* color: #FFF; */
+    /* text-align: center; */
+    line-height: 20px;
+  }
+
+  .email-id{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 8px;
+    font-family: 'posteramalight', serif;
+
+  }
+  .phone-no{
+    
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 8px;
+        font-family: 'posteramalight', serif;
+    
+      
+  }
+  .heading-txt{
+    padding-top:10px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: start;
+    height: 20px;
+    color: #2d2d2d;
+    font-family: 'roombold';
+  }
+
+  .underline-social{
+    width: 50%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+.underline-social span{
+width: 15px;
+height: 100%;
+background: #fff;
+border-radius: 3px;
+position: absolute;
+top: 0;
+left: 10px;
+animation: moving 2s linear infinite;
+}
+
+.underline-address{
+    width: 21%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.underline-address span{
+    width: 15px;
+    height: 100%;
+    background: #FFF;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+    }
+
+    .underline-map{
+        width: 10.4%;
+        height: 5px;
+        background: #767676;
+        border-radius: 3px;
+        position: relative;
+        overflow: hidden;
+    
+    }
+    
+    .underline-map span{
+        width: 15px;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        animation: moving 2s linear infinite;
+        }
+
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+    
+}
+
+  
+  .box-1 {
+    /* background-color: red; */
+    padding-left: 50px;
+    
+    width: 30%;
+    height: 200px;
+  }
+  
+  .box-2 {
+    /* background-color: blue; */
+    padding-left: 50px;
+    width: 15%;
+    height: 245px;
+  }
+  .box-2 ul li {
+    padding-top: 6px;
+    
+  }
+  
+  .box-3 {
+    /* background-color: green; */
+    width: 25%;
+    height: 200px;
+    padding-left: 50px;
+   
+  }
+
+  .box-4{
+    /* background-color: brown; */
+    width: 30%;
+    height: 250px;
+    padding-left: 80px;
+  }
+  .logo{
+    width: 80px;
+    /* margin-bottom: 30px; */
+}
+
+  .copy-right{
+    
+	padding: 0.5rem;
+    background: #1f2020;
+    /* letter-spacing: 0.1rem; */
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: "bicyclettelight", serif;
+}
+  
+
