@@ -206,6 +206,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .heading{
     padding: 50px;

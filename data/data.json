@@ -1,38 +1,38 @@
 [
     {
-      "name": "Shivpujan",
-      "batch": "Batch 21-24",
+      "name": "Deepti Midha",
+      "batch": "Batch 87-90",
       "description":
-      "Senior Lead Developer, Google"
+      "Director, PMO, Vishay Intertech"
     },{
-      "name": "Rishi Singh",
-      "batch": "Batch 21-24",
+      "name": "Vivek Karimbil",
+      "batch": "Batch 87-90",
       "description":
-      "Senior Lead Developer, Google"
+      "VP Engineering, SAP"
     },{
-      "name": "Deepak Kumar",
-      "batch": "Batch 21-24",
+      "name": "Samir Mathur",
+      "batch": "Batch 93-96",
       "description":
-      "Senior Lead Developer, Google"
+      "Senior Vice President, Citi"
     },{
-      "name": "Aditya",
-      "batch": "Batch 21-24",
+      "name": "Anita Goel",
+      "batch": "Batch 86-88",
       "description":
-      "Senior Lead Developer, Google"
+      "Assistant Professor, DSC, UOD"
     },{
       "name": "Navneet Kumar",
       "batch": "Batch 21-24",
       "description":
       "Senior Lead Developer, Google"
     },{
-      "name": "Abhutalha",
-      "batch": "Batch 21-24",
+      "name": "Dr. S.K. Pal",
+      "batch": "2006",
       "description":
-      "Senior Lead Developer, Google"
+      "Scientist, DRDO"
     },{
-      "name": "Ajay",
-      "batch": "Batch 21-24",
-      "description":
-      "Senior Lead Developer, Google"
+      "name": "Ritambhra Korpal",
+      "batch": "Batch 87-90",
+      "description":"Assistant Professor, Pune University"
+      
     }
 ]
