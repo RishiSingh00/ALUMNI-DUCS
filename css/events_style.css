@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 2rem 4rem;
+    color: #12172b;
+}
+
+.heading {
+    font-size: 5rem;
+    color: #12172b;
+}
+
+.event-card {
+    width: 50%;
+    height: 25rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 1rem;
+    background-image: url(../img/slider1-3.jpg);
+}
+.event-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.event-date {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #12172b;
+    transition: 0.3s;
+}
+.event-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #12172b;
+    transition: 0.3s;
+}
+.event-location {
+    font-size: 2.2rem;
+    font-style: italic;
+    color: #12172b;
+    transition: 0.3s;
+}
+.event-description {
+    width: 50%;
+    margin: 2rem 4rem;
+}
+.event-details {
+    transition: 0.3s;
+}
+.event-row{
+    display:flex;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 786px){
+    .event-row{
+        flex-direction: column;
+    }
+}
