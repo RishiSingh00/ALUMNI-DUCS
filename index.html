@@ -55,9 +55,7 @@
 <main>
     <div id="parallax" class="home parallax-item">
         <div class="quote">
-            <p>“Nobody is bothered<br>
-                about an institution<br>
-                more than its <strong class="bold_alumni_text">alumni</strong>”</p>
+            <p>“Welcome <strong class="bold_alumni_text">alumni</strong>”</p>
         </div>
         <div class="below_icon">
             <img src="img/Group 8.png" alt="Slide Down">
@@ -191,67 +189,21 @@
                 <p class="phone-no">+91-11-27667591</p>
             </div>
             <div class="box-4">
-                <h3 class="heading-txt">MAP<div class="underline-map"><span></span></div></h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d4808.940999539585!2d77.20547023061032!3d28.687397490087406!3m2!1i1024!2i768!4f13.1!2m1!1sDelhi%20University%2C%20Department%20of%20Computer%20Science!5e0!3m2!1sen!2sin!4v1675779142551!5m2!1sen!2sin"width="200rem" height="200rem" style="border:0;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                <h3 class="heading-txt">MAP
+                    <div class="underline-map"><span></span></div>
+                </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d4808.940999539585!2d77.20547023061032!3d28.687397490087406!3m2!1i1024!2i768!4f13.1!2m1!1sDelhi%20University%2C%20Department%20of%20Computer%20Science!5e0!3m2!1sen!2sin!4v1675779142551!5m2!1sen!2sin"
+                        width="200rem" height="200rem" style="border:0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-          </div>
-          <div class="copy-right"><p>&copy; Department of Computer Science, University of Delhi</p></div>      
+        </div>
+        <div class="copy-right"><p>&copy; Department of Computer Science, University of Delhi</p></div>
     </div>
-    </footer>
+</footer>
 <script src="" async defer></script>
-<!-- countdown script start -->
-<script>
-    // Set the date we're counting down to
-    const countDownDate = new Date("Mar 25, 2023 15:37:25").getTime();
-
-    // Update the count-down every 1 second
-    const x = setInterval(function () {
-
-        // Get today's date and time
-        const now = new Date().getTime();
-
-        // Find the distance between now and the count-down date
-        const distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-        // Ensure double digits for days, hours, minutes and seconds
-        days = (days < 10) ? "0" + days : days;
-        hours = (hours < 10) ? "0" + hours : hours;
-        minutes = (minutes < 10) ? "0" + minutes : minutes;
-        seconds = (seconds < 10) ? "0" + seconds : seconds;
-
-        // Display the result in the element with respective ids"
-        document.getElementById("days").innerHTML = days + " : ";
-        document.getElementById("hours").innerHTML = hours + " : ";
-        document.getElementById("minutes").innerHTML = minutes + " : ";
-        document.getElementById("seconds").innerHTML = seconds;
-
-        // If the count-down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("days").innerHTML = ":)";
-            document.getElementById("hours").innerHTML = " :>";
-            document.getElementById("minutes").innerHTML = ":)";
-            document.getElementById("seconds").innerHTML = ":>";
-
-        }
-    }, 1000);
-</script>
-<!-- countdown script end -->
 
 </body>
-<!--     Swiper JS -->
-<!--    Uncomment this line-->
-<script src="js/swiper-bundle.min.js"></script>
 
-<!--     JavaScript -->
-<!--    Uncomment this line-->
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </html>
