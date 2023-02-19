@@ -18,219 +18,230 @@
     <link rel="icon" href="img/ducs.png"/>
 </head>
 <body>
-<header>
-    <div class="header">
-        <div class="under_construction">
-            <h1 class="moving-text">UNDER CONSTRUCTION</h1>
-        </div>
-
-        <div class="inner_header">
-            
-            <div class="header_line_1">
-                <!-- TODO : SOCIALS -->
+<div id="main">
+    <header>
+        <div class="header">
+            <div class="under_construction">
+                <h1 class="moving-text">UNDER CONSTRUCTION</h1>
             </div>
-            <div class="header_line_2">
-                <!-- DU100 LOGO | LEFT -->
-                
-                <!-- NAVBAR ELEMENTS | RIGHT -->
-                <ul class="navbar-right">
-                    <li><a href="pages/events.html">EVENTS</a></li>
-                    <li><a href="#alumni">ALUMNI</a></li>
-                    <li><a href="pages/gallery.html">MEMORIES</a></li>
-                    <li><a href="pages/team.html">TEAM</a></li>
-                </ul>
-                <div id="du_logo">
-                    <img src="img/DU100.jpg" alt="du_100_image">
+
+            <div class="inner_header">
+
+                <div class="header_line_1">
+                    <!-- TODO : SOCIALS -->
+                </div>
+                <div class="header_line_2">
+                    <!-- DU100 LOGO | LEFT -->
+                    <!-- NAVBAR ELEMENTS | RIGHT -->
+                    <div class="nav-bar">
+                    <ul class="navbar-right">
+                        <li><a href="pages/events.html">EVENTS</a></li>
+                        <li><a href="#alumni">ALUMNI</a></li>
+                        <li><a href="pages/gallery.html">MEMORIES</a></li>
+                        <li><a href="pages/team.html">TEAM</a></li>
+                    </ul>
+                    <div id="du_logo">
+                        <img src="img/DU100.jpg" alt="du_100_image">
+                    </div>
+                    </div>
+                    <div class="hamburger">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                        <div id="mySidebar" class="sidebar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="pages/events.html">EVENTS</a>
+                            <a href="#alumni">ALUMNI</a>
+                            <a href="pages/gallery.html">MEMORIES</a>
+                            <a href="pages/team.html">TEAM</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DUCS LOGO | MIDDLE -->
+                <div class="logo_container">
+                    <div class = "logo_container_div"><a href="#parallax"><img src="img/Group 13.png" alt="du_logo"></a></div>
                 </div>
             </div>
-            
-            <!-- DUCS LOGO | MIDDLE -->
-            <div class="logo_container">
-                <div class = "logo_container_div"><a href="#parallax"><img src="img/Group 13.png" alt="du_logo"></a></div>
-            </div>
         </div>
-    </div>
 </header>
-
-<main>
-    <div id="parallax" class="home parallax-item">
-        <div class="quote">
-            <p>“Welcome <strong class="bold_alumni_text">alumni</strong>”</p>
+    <main>
+        <div id="parallax" class="home parallax-item">
+            <div class="quote">
+                <p>“Welcome <strong class="bold_alumni_text">alumni</strong>”</p>
+            </div>
+            <div class="below_icon">
+                <img src="img/Group 8.png" alt="Slide Down">
+            </div>
         </div>
-        <div class="below_icon">
-            <img src="img/Group 8.png" alt="Slide Down">
-        </div>
-    </div>
-    
-    
-    <!-- upcoming events start Modified-->
 
-    <div class="upcoming-event">
-        <div class="img-area">
-            <img class="img-poster" src="img/alumnimeet-01.png" alt="meet_poster">
-        </div>
-        <div class="content-area">
-            <div class="top-area">
-                <div class="top-heading">
-                    <h5 class="txt-title">UPCOMING EVENT</h5>
-                    <h2 class="txt-meet">ALUMNI MEET</h2>
 
-                    <h3 class="txt-bottom">
-                        <a href="index.html">
+        <!-- upcoming events start Modified-->
+
+        <div class="upcoming-event">
+            <div class="img-area">
+                <img class="img-poster" src="img/alumnimeet-01.png" alt="meet_poster">
+            </div>
+            <div class="content-area">
+                <div class="top-area">
+                    <div class="top-heading">
+                        <h5 class="txt-title">UPCOMING EVENT</h5>
+                        <h2 class="txt-meet">ALUMNI MEET</h2>
+
+                        <h3 class="txt-bottom">
+                            <a href="index.html">
+                                <img class="map_logo" src="img/location_logo.png" alt="loaction">
+                            </a>
+                            CONFERENCE HALL
+                        </h3>
+                    </div>
+                    <div class="calender">
+                        <span class="day">25</span>
+                        <span class="month">MAR</span>
+                        <span class="year">2023</span>
+                    </div>
+                </div>
+                <div class="bottom-area">
+                    <div class="countdown">
+                        <div>
+                            <p id="days">00</p>
+                            <span>Days</span>
+                        </div>
+                        <div>
+                            <p id="hours">00</p>
+                            <span>Hours</span>
+                        </div>
+                        <div>
+                            <p id="minutes">00</p>
+                            <span>Minutes</span>
+                        </div>
+                        <div>
+                            <p id="seconds">00</p>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+                    <div class="register">
+                        <button class="register-button">REGISTER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="upcoming-event">
+            <div class="img-area">
+                <img class="img-poster" src="img/alumnimeet-01.png" alt="meet_poster">
+            </div>
+            <div class="content-area">
+                <div class="top-area">
+                    <div class="top-heading">
+                        <h5 class="txt-title">UPCOMING EVENT</h5>
+                        <h2 class="txt-meet">ALUMNI MEET</h2>
+
+                        <h3 class="txt-bottom">
+                            <a href="index.html">
                             <img class="map_logo" src="img/location_logo.png" alt="loaction">
-                        </a>
-                        CONFERENCE HALL
-                    </h3>
+                            </a>
+                            DEPARTMENT OF COMPUTER SCIENCE
+                        </h3>
+                    </div>
+                    <div class="calender">
+                        <span class="day">25</span>
+                        <span class="month">MAR</span>
+                        <span class="year">2023</span>
+                    </div>
+
                 </div>
-                <div class="calender">
-                    <span class="day">25</span>
-                    <span class="month">MAR</span>
-                    <span class="year">2023</span>
+                <div class="bottom-area">
+                    <div class="countdown">
+                        <div>
+                            <p id="days">00</p>
+                            <span>Days</span>
+                        </div>
+                        <div>
+                            <p id="hours">00</p>
+                            <span>Hours</span>
+                        </div>
+                        <div>
+                            <p id="minutes">00</p>
+                            <span>Minutes</span>
+                        </div>
+                        <div>
+                            <p id="seconds">00</p>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+
+                    <div class="register">
+                        <button class="register-button">REGISTER</button>
+                    </div>
                 </div>
             </div>
-            <div class="bottom-area">
-                <div class="countdown">
-                    <div>
-                        <p id="days">00</p>
-                        <span>Days</span>
-                    </div>
-                    <div>
-                        <p id="hours">00</p>
-                        <span>Hours</span>
-                    </div>
-                    <div>
-                        <p id="minutes">00</p>
-                        <span>Minutes</span>
-                    </div>
-                    <div>
-                        <p id="seconds">00</p>
-                        <span>Seconds</span>
-                    </div>
-                </div>
-                <div class="register">
-                    <button class="register-button">REGISTER</button>
-                </div>
+        </div>-->
+
+
+        <div id="news">
+            <div class="heading">
+                <h1>Latest News</h1>
+                <hr>
             </div>
-        </div>
-    </div>
-
-    <!--<div class="upcoming-event">
-        <div class="img-area">
-            <img class="img-poster" src="img/alumnimeet-01.png" alt="meet_poster">
-        </div>
-        <div class="content-area">
-            <div class="top-area">
-                <div class="top-heading">
-                    <h5 class="txt-title">UPCOMING EVENT</h5>
-                    <h2 class="txt-meet">ALUMNI MEET</h2>
-
-                    <h3 class="txt-bottom">
-                        <a href="index.html">
-                        <img class="map_logo" src="img/location_logo.png" alt="loaction">
-                        </a>
-                        DEPARTMENT OF COMPUTER SCIENCE
-                    </h3>
+            <div class="news_area">
+                <div id="news_display">
                 </div>
-                <div class="calender">
-                    <span class="day">25</span>
-                    <span class="month">MAR</span>
-                    <span class="year">2023</span>
-                </div>
-
-            </div>
-            <div class="bottom-area">
-                <div class="countdown">
-                    <div>
-                        <p id="days">00</p>
-                        <span>Days</span>
-                    </div>
-                    <div>
-                        <p id="hours">00</p>
-                        <span>Hours</span>
-                    </div>
-                    <div>
-                        <p id="minutes">00</p>
-                        <span>Minutes</span>
-                    </div>
-                    <div>
-                        <p id="seconds">00</p>
-                        <span>Seconds</span>
-                    </div>
-                </div>
-
-                <div class="register">
-                    <button class="register-button">REGISTER</button>
+                <div class="banner">
+                    <img src="img/depttransparent-01 2.png" alt="banner">
                 </div>
             </div>
         </div>
-    </div>-->
-
-
-    <div id="news">
-        <div class="heading">
-            <h1>Latest News</h1>
-            <hr>
-        </div>
-        <div class="news_area">
-            <div id="news_display">
+        <script type="module" src="js/script.js"></script>
+        <!--------GALLERY----------------->
+        <div class="wrapper">
+            <div class="carouse">
+                <img src="./img/gallery/936287a5-0e4c-4c6f-a63e-db59e8fc6d74 (2).jpg">
+                <img src="./img/gallery/a111c6e9-b3b0-452d-9c2e-97d540177009 (1).jpg">
+                <img src="./img/gallery/dumca-002 (1).jpg">
+                <img src="./img/gallery/Freshers05-08 (1).jpg">
+                <img src="./img/gallery/MCA2005-08and06-09 (1).jpg">
+                <img src="./img/gallery/Picsart_23-02-10_19-28-22-874.jpg">
+                <img src="./img/gallery/Picsart_23-02-10_19-30-38-259.jpg">
+                <img src="./img/gallery/Picsart_23-02-10_19-30-55-787.jpg">
+                <img src="./img/gallery/Picsart_23-02-10_19-31-39-833.jpg">
             </div>
-            <div class="banner">
-                <img src="img/depttransparent-01 2.png" alt="banner">
-            </div>
         </div>
-    </div>
-    <script type="module" src="js/script.js"></script>
-    <!--------GALLERY----------------->
-    <div class="wrapper">
-        <div class="carouse">
-             <img src="./img/gallery/936287a5-0e4c-4c6f-a63e-db59e8fc6d74 (2).jpg">
-             <img src="./img/gallery/a111c6e9-b3b0-452d-9c2e-97d540177009 (1).jpg">
-             <img src="./img/gallery/dumca-002 (1).jpg">
-             <img src="./img/gallery/Freshers05-08 (1).jpg">
-             <img src="./img/gallery/MCA2005-08and06-09 (1).jpg">
-             <img src="./img/gallery/Picsart_23-02-10_19-28-22-874.jpg">
-             <img src="./img/gallery/Picsart_23-02-10_19-30-38-259.jpg">
-             <img src="./img/gallery/Picsart_23-02-10_19-30-55-787.jpg">
-             <img src="./img/gallery/Picsart_23-02-10_19-31-39-833.jpg">
-        </div>
-    </div>
-    
-    <!--  -->
-    <div id="alumni">
-        <div class="slide-container swiper">
-            <div class="slide-content">
-                <div id="cardsToDisplay" class="card-wrapper swiper-wrapper">
-                    <!--Data is displayed over here through data.json-->
+
+        <!--  -->
+        <div id="alumni">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div id="cardsToDisplay" class="card-wrapper swiper-wrapper">
+                        <!--Data is displayed over here through data.json-->
+                    </div>
                 </div>
-            </div>
 
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-    </div>
 </main>
-<footer>
+    <footer>
     <div class="footer-container">
         <div class="container">
             <div class="box-1">
-                <img src="img/ducs.png"  class="logo" >
-                
+                <img src="img/ducs.png" class="logo" >
+
                 <p class="para-txt">The Department of Computer Science was established in the year 1981 with the objective of imparting quality education in the field of Computer Science. The Department has modern facilities for teaching, learning and research.</p>
             </div>
             <div class="box-2">
                 <h3 class="heading-txt">SOCIALS<div class="underline-social"><span></span></div></h3>>
-                
+
                 <ul>
                     <li><img src="img/LinkedIn - Negative.png" height="30px" ></li>
                     <li><img src="img/Instagram - Original.png" height="30px" ></li>
                     <li><img src="img/YouTube - Negative.png" height="30px" ></li>
                     <li><img src="img/Facebook - Original.png" height="30px" ></li>
-                 </ul>
+                </ul>
             </div>
             <div class="box-3">
                 <h3 class="heading-txt">ADDRESS<div class="underline-address"><span></span></div></h3>
-                <p  class="para-txt">Department of  Computer Science</p>
+                <p class="para-txt">Department of  Computer Science</p>
                 <p class="para-txt">First floor,Faculty of Mathematical Science</p>
                 <p class="para-txt">Opposite Daulat Ram College</p>
                 <p class="para-txt">University of Delhi,11007</p>
@@ -249,8 +260,8 @@
         <div class="copy-right"><p>&copy; Department of Computer Science, University of Delhi</p></div>
     </div>
 </footer>
-<script src="" async defer></script>
-
+    <script src="" async defer></script>
+</div>
 </body>
 
 <script src="js/swiper-bundle.min.js"></script>
