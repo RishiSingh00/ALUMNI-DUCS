@@ -307,7 +307,7 @@
 }
 .session_text {
     font-size: 8rem;
-    color: rgba(255, 172, 0, 0.92);
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
