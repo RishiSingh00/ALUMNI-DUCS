@@ -262,6 +262,12 @@
 }
 
 @font-face {
+    font-family: 'beautymountains';
+    src: url('font/BeautyMountains.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'maderabold';
     src: url('font/Madera-Bold.ttf');
 }
@@ -270,7 +276,7 @@
     position: relative;
     width: 100%;
     margin-top:5rem;
-    height: 62rem;
+    height: 30rem;
     background-image: url(../img/slider1-3.jpg);
 }
 
@@ -288,19 +294,6 @@
     transform: translate(-50%, -50%);
 }
 
-.below_icon {
-    position: absolute;
-    height: 4rem;
-    width: 6rem;
-    left: 50%;
-    bottom: 1rem;
-    align-items: flex-end;
-}
-
-.below_icon img {
-    height: 100%;
-    width: 100%;
-}
 
 .bold_alumni_text {
     font-family: "roombold", serif;
@@ -313,11 +306,11 @@
 
 @media screen and (max-width: 768px) {
     .home{
-        height:100rem;
+        height:40rem;
         width:100%;
     }
     .quote {
-        font-size: 15rem !important;
+        font-size: 10rem !important;
     }
     .welcome_text {
         font-size: 8rem !important;
@@ -329,6 +322,21 @@
         font-size: 6rem;
     }
        
+}
+@media screen and (max-width: 450px) {
+    .home{
+        height : 200px;
+        width:100%;
+    }
+    .quote p{
+        font-size: 3rem !important;
+    }
+    .bold_alumni_text{
+        font-size: 4rem !important;
+    }
+    .session_text{
+        font-size: 6rem !important;
+    }
 }
 @media screen and (max-width: 375px) {
     .quote {
@@ -369,13 +377,12 @@
 
 .img-poster {
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 .content-area {
     width: 60%;
     position: relative;
-    padding: 1rem;
 }
 
 .top-area {
@@ -634,7 +641,7 @@
 
 #news h1{
     font-family: 'posteramalight', cursive;
-    font-size: 30px;
+    font-size: 2vw;
     color: #17242A;
     text-transform: uppercase;
     text-align: center;
@@ -647,7 +654,7 @@ hr{
 }
 #news{
     width: 100%;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -655,7 +662,7 @@ hr{
     position: relative;
 }
 .heading{
-    padding: 50px 0px 50px 0px;
+    padding: 10px 0px 10px 10px;
     height:10%;
     margin-right: auto;
 }
@@ -664,19 +671,25 @@ hr{
     height: 90%;
     display: flex;
 }
-#news_display{
-    width: 50%;
+.paragraph {
+    width: 55%;
+    color:#17242A;
     height: 80%;
+    font-family: 'beautymountains' ;
+    font-size: 2vw;
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
-    overflow-y: scroll;
+    padding: 0px 30px 30px 30px;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+
 }
+
 .banner{
-    width: 50%;
+    width: 45%;
     height: 100%;
     right:0;
-    padding-left: 100px;
     display: flex;
     bottom:0;
 }
@@ -686,154 +699,6 @@ hr{
     height: 70%;
     margin-top: auto;
 }
-.news_card{
-    width: 80%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.news_card .news_card_content{
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.news_card_title h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #17242A;
-    text-transform: uppercase;
-    margin-bottom: auto;
-    letter-spacing: 2px;
-}
-
-.news_card_body{
-    margin-top: auto;
-}
-.news_card_body p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    color: #1c313b;
-    text-transform: uppercase;
-}
-
-.news_card_body a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    color: #17242A;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-style: italic;
-    font-weight: bolder;
-}
-
-@media screen and (max-width: 768px){
-    .heading{
-        padding: 50px 0px 50px 0px;
-        margin-right: 0;
-    }
-    .news_area{
-        width: 90%;
-        height: 60%;
-        display: flex;
-        flex-direction: column;
-    }
-    #news_display{
-        width: 40%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .banner{
-        width: 60%;
-        height: 100%;
-        float:right;
-    }
-    .banner img{
-        width: 100%;
-        height: 60%;
-    }
-    .news_card{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-    .news_card img{
-        width: 40%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .news_card .news_card_content{
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .news_card_title h3{
-        font-family: 'posteramalight', cursive;
-        font-size: 15px;
-        color: #000;
-        text-transform: uppercase;
-        margin-bottom: auto;
-    }
-
-    .news_card_body{
-        margin-top: auto;
-    }
-    .news_card_body p{
-        font-family: 'posteramalight', cursive;
-        font-size: 10px;
-        color: #000;
-        text-transform: uppercase;
-    }
-
-    .news_card_body a{
-        font-family: 'posteramalight', cursive;
-        font-size: 10px;
-        color: #000;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-}
-
-/*Scroll bar*/
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #8A8A8A;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #4E4E4E;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #212121;
-}
-
 
 @media screen and (max-width:1024px) {
     .banner {
@@ -845,181 +710,39 @@ hr{
 }
 @media screen and (max-width:768px) {
     #news{
-        height:450px;
+        width:100%;
+        height:100%;
+    }
+    hr{
+        height:1px;
     }
     .banner{
         display: none;
     }
-    #news_display {
+    .paragraph {
         height:100%;
         width:100%;
     }
+}
+@media screen and (max-width:425px) {
+    #news{
+        width:100%;
+        height:100%;
+    }
+    .paragraph {
+        font-size: 6vw;
+        height:100%;
+        width:100%;
+    }
+    #news h1 {
+        font-size: 4vw;
+    }
+}
     
 /*Scroll bar*/
 
-::-webkit-scrollbar:horizontal{
-    height: 5px;
-    background-color: 4E4E4E;
-  }
-  ::-webkit-scrollbar-thumb:horizontal{
-          background: #212121;
-          border-radius: 10px;
-          
-      }
-    
 
-}
 /* -----------------NAVNEET------------- */
-/*-------------SHIVPUJAN-----------------*/
-/*DISPLAY : NONE*/
-#alumni {
-    display: none;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    min-height: 30rem;
-    background-image: url(../img/alBack.png);
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.parallax-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 40vh;
-}
-
-.parallax-item:first-child {
-    background: url(../img/slider1-3.jpg);
-}
-
-.slide-container {
-    max-width: 1120px;
-    width: 100%;
-    padding: 0;
-    z-index: 1;
-}
-
-.slide-content {
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
-
-}
-
-.card {
-    border-radius: 15px;
-    background-color: #3AAFA9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.name {
-    font-family: roombold, serif;
-    font-size: 25px;
-    font-weight: 500;
-    color: #FFFFFF;
-    padding: 10px;
-}
-
-.batch {
-    font-family: sans-serif, serif;
-    font-size: 16px;
-    font-weight: 150;
-    color: #FFFFFF;
-}
-
-.description {
-    background-color: #263941;
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: 'bicyclettelight', serif;
-    text-align: center;
-    padding: 1.5rem;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
-.button {
-    border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: #3AAFA9;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    background: #3AAFA9;
-}
-
-.swiper-navBtn {
-    color: #3AAFA9;
-    transition: color 0.3s ease;
-}
-
-.swiper-navBtn:hover {
-    color: #3AAFA9;
-}
-
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 35px;
-}
-
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-button-prev {
-    left: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color: #3AAFA9;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #3AAFA9;
-}
-
-@media screen and (max-width: 768px) {
-    .slide-content {
-        margin: 0 10px;
-    }
-
-    .swiper-navBtn {
-        display: none;
-    }
-
-    .parallax-item h2 {
-        font-size: 1.5rem;
-    }
-
-    .quote {
-        font-size: 4rem;
-    }
-
-    .bold_alumni_text {
-        font-size: 2.5rem;
-    }
-}
-
 /* -------------------SHIVPUJAN-------------------- */
 
 /* -------------------FOOTER----------------------- */
@@ -1151,8 +874,6 @@ animation: moving 2s linear infinite;
     padding-top:5px;
     width: 30%;
     height: 100%;
-    padding-right:5%;
-    padding-left: 3%;
   }
   
   .box-2 {
@@ -1169,9 +890,6 @@ animation: moving 2s linear infinite;
     /* background-color: green; */
     width: 25%;
     height: 100%;
-    padding-left: 30px;
-    padding-right: 10%;
-   
   }
 
   .box-4{
@@ -1277,13 +995,11 @@ animation: moving 2s linear infinite;
     }
     
     .box-2 ul li{
-        padding-right:10px;
         display: inline;
 
     }
     .box-3{
         width: 100%;
-        padding:20px 0px 20px 0px;
         height:100px;
     }
     .box-4{
@@ -1305,14 +1021,18 @@ animation: moving 2s linear infinite;
     .box-1{
         height: 100%;
     }
-    .box-2{
+
+    .box-2 {
         height: 100%;
     }
-    .box-3{
+
+    .box-3 {
         height: 100%;
     }
-    .box-4{
+
+    .box-4 {
         height: 100%;
     }
 }
+
 /* -------------------FOOTER----------------------- */
