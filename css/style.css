@@ -32,7 +32,6 @@
     font-size: 1rem;
     color:aliceblue;
     left: 50%;
-    width:15rem;
     height:100%;
     text-align: center;
     background-color: #000;
@@ -40,11 +39,9 @@
 .under_construction {
     position: relative;
     display: flex;
-/* border-top: solid 10px;
-border-image: repeating-linear-gradient( -75deg, yellow, yellow 10px, black 10px, black 20px) 20; */
-background: repeating-linear-gradient(-75deg,yellow , yellow 5px, black 5px, black 10px);
-height:15px;
-width:100%;
+    background: repeating-linear-gradient(-75deg,yellow , yellow 5px, black 5px, black 10px);
+    height:15px;
+    width:100%;
 }
 
 /* Makes the animation pause on hover */
@@ -185,6 +182,7 @@ width:100%;
     }
     .hamburger{
         display: flex;
+        margin-left: auto;
     }
 }
 
@@ -524,8 +522,6 @@ width:100%;
     }
     .img-area{
         width:35%;
-        padding-left:2rem;
-        margin-left: 1rem;
     }
     .content-area{
         width:65%;
@@ -551,19 +547,15 @@ width:100%;
     .upcoming-event {
         height:100%;
         flex-direction: column;
-
     }
     .bottom-area{
         padding-top: 0;
     }
-
     .img-area{
         width:100%;
-        padding:2rem 2rem 0rem 2rem;
         margin:0;
     }
     .content-area{
-        padding:0rem 1rem 1rem 1rem;
         width:100%;
         height:25rem;
     }
@@ -572,7 +564,6 @@ width:100%;
     }
     .countdown div{
         flex-basis: 80px;
-        
     }
     .countdown div p{
         font-size: 42px !important;
@@ -584,7 +575,6 @@ width:100%;
     }
     .txt-title{
         font-size:20px;
-        padding : 1.5rem 1.5rem 0rem 1.5rem;
     }
 }
 
@@ -604,7 +594,7 @@ width:100%;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
     .upcoming-event{
         height: 100%;
     }
