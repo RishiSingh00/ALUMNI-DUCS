@@ -37,9 +37,9 @@ const x = setInterval(function () {
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
     // Display the result in the element with respective ids"
-    document.getElementById("days").innerHTML = days + "&nbsp:&nbsp";
-    document.getElementById("hours").innerHTML = hours + "&nbsp:&nbsp";
-    document.getElementById("minutes").innerHTML = minutes + "&nbsp:&nbsp";
+    document.getElementById("days").innerHTML = days + "&nbsp:";
+    document.getElementById("hours").innerHTML = hours + "&nbsp:";
+    document.getElementById("minutes").innerHTML = minutes + "&nbsp:";
     document.getElementById("seconds").innerHTML = seconds;
 
     // If the count-down is finished, write some text
