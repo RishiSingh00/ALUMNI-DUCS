@@ -1126,6 +1126,11 @@ animation: moving 2s linear infinite;
         animation: moving 2s linear infinite;
         }
 
+    .S-logo:hover {
+         height: 35px;   
+      }
+          
+
 @keyframes moving {
     0%{
         left: -20px;
