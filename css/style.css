@@ -186,8 +186,6 @@ width:100%;
     }
     .hamburger{
         display: flex;
-        margin-left: auto;
-        margin-right: 3vw;
     }
 }
 
