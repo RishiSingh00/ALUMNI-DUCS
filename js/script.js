@@ -53,87 +53,87 @@ const x = setInterval(function () {
     }
 }, 1000);
 
-//news data
-const container = document.getElementById("news_display");
-const news_data = fetch("../data/newsData.json")
-    .then(results => results.json())
-    .then(data => {
-            console.log(data);
-            data.forEach((result, idx) => {
-                const content = `
-                      <div class="news_card" id="card-${idx}">
-                          <img src=${result.url} alt = "news">
-                          <div class="news_card_content">
-                              <div class="news_card_title">
-                                  <h3>${result.title}</h3>
-                              </div>
-                              <div class="news_card_body">
-                                  <p>${result.description}</p>
-                                  <a href="#">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                   `;
-                // Append newyly created card element to the container
-                container.innerHTML += content;
-            })
-        }
-    );
+// //news data
+// const container = document.getElementById("news_display");
+// const news_data = fetch("../data/newsData.json")
+//     .then(results => results.json())
+//     .then(data => {
+//             console.log(data);
+//             data.forEach((result, idx) => {
+//                 const content = `
+//                       <div class="news_card" id="card-${idx}">
+//                           <img src=${result.url} alt = "news">
+//                           <div class="news_card_content">
+//                               <div class="news_card_title">
+//                                   <h3>${result.title}</h3>
+//                               </div>
+//                               <div class="news_card_body">
+//                                   <p>${result.description}</p>
+//                                   <a href="#">Read More</a>
+//                               </div>
+//                           </div>
+//                       </div>
+//                    `;
+//                 // Append newyly created card element to the container
+//                 container.innerHTML += content;
+//             })
+//         }
+//     );
 
-//alumni data
-const swiper_card = document.getElementById('cardsToDisplay');
-const alumni_slider_data = fetch("../data/data.json")
-    .then(results => results.json())
-    .then(data => {
-        console.log(data);
-        data.forEach((result) => {
-            const content = `
-                    <div class="card swiper-slide">
-                        <div class="card-content">
-                            <h1 class="name">${result.name}</h1>
-                            <h2 class="batch">${result.batch}</h2>
-                        </div>
-                        <h1 class="description">${result.description}</h1>
-                    </div>
-            `;
-            // Append newyly created card element to the container
-            swiper_card.innerHTML += content;
-        });
-    })
+// //alumni data
+// const swiper_card = document.getElementById('cardsToDisplay');
+// const alumni_slider_data = fetch("../data/data.json")
+//     .then(results => results.json())
+//     .then(data => {
+//         console.log(data);
+//         data.forEach((result) => {
+//             const content = `
+//                     <div class="card swiper-slide">
+//                         <div class="card-content">
+//                             <h1 class="name">${result.name}</h1>
+//                             <h2 class="batch">${result.batch}</h2>
+//                         </div>
+//                         <h1 class="description">${result.description}</h1>
+//                     </div>
+//             `;
+//             // Append newyly created card element to the container
+//             swiper_card.innerHTML += content;
+//         });
+//     })
 
 
 // const container = document.getElementById("");
 
-//swiper
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+// //swiper
+// var swiper = new Swiper(".slide-content", {
+//     slidesPerView: 3,
+//     spaceBetween: 25,
+//     loop: true,
+//     centerSlide: 'true',
+//     fade: 'true',
+//     grabCursor: 'true',
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//         dynamicBullets: true,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
 
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
-});
+//     breakpoints: {
+//         0: {
+//             slidesPerView: 1,
+//         },
+//         520: {
+//             slidesPerView: 2,
+//         },
+//         950: {
+//             slidesPerView: 3,
+//         },
+//     },
+// });
 
 const parallax = document.getElementById("parallax");
 
