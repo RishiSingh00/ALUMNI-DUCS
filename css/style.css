@@ -850,6 +850,19 @@ hr{
         height:100%;
         width:100%;
     }
+    
+/*Scroll bar*/
+
+::-webkit-scrollbar:horizontal{
+    height: 5px;
+    background-color: 4E4E4E;
+  }
+  ::-webkit-scrollbar-thumb:horizontal{
+          background: #212121;
+          border-radius: 10px;
+          
+      }
+    
 
 }
 /* -----------------NAVNEET------------- */
