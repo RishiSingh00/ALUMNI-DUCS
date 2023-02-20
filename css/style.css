@@ -413,6 +413,10 @@
     font-weight: lighter;
 }
 
+.txt-bottom:hover{
+    color:blue;
+}
+
 .bottom-area {
     display: flex;
     flex-direction: row;
