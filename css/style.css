@@ -307,8 +307,8 @@
     font-size: 8rem;
 }
 .session_text {
-    font-size: 8rem;
-    color: rgba(255, 172, 0, 0.92);
+    font-size: 6rem;
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -1086,7 +1086,7 @@ animation: moving 2s linear infinite;
 }
 
 .underline-address{
-    width: 25%;
+    width: 28%;
     height: 5px;
     background: #767676;
     border-radius: 3px;
@@ -1127,6 +1127,11 @@ animation: moving 2s linear infinite;
         animation: moving 2s linear infinite;
         }
 
+    .S-logo:hover {
+         height: 35px;   
+      }
+          
+
 @keyframes moving {
     0%{
         left: -20px;
@@ -1142,6 +1147,8 @@ animation: moving 2s linear infinite;
     padding-top:5px;
     width: 30%;
     height: 100%;
+    padding-right:5%;
+    padding-left: 3%;
   }
   
   .box-2 {
@@ -1159,6 +1166,7 @@ animation: moving 2s linear infinite;
     width: 25%;
     height: 100%;
     padding-left: 30px;
+    padding-right: 10%;
    
   }
 
