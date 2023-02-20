@@ -196,6 +196,7 @@ width:100%;
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+
 }
 
 
@@ -243,6 +244,18 @@ width:100%;
         left:3rem;
     }
     
+}
+@media screen and (max-width: 450px) {
+    .logo_container {
+        height: 8rem;
+        width: 20rem;
+    }
+    .logo_container_div{
+        padding: 2vw;
+    }
+    .header_line_2 {
+        height: 5rem;
+    }
 }
 
 
@@ -851,7 +864,7 @@ html {
 .slide-container {
     max-width: 1120px;
     width: 100%;
-    padding: 40px 0;
+    padding: 0;
     z-index: 1;
 }
 
