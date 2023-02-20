@@ -60,6 +60,10 @@ body {
     color: #12172b;
     transition: 0.3s;
 }
+
+.event-location:hover{
+    color:rgba(37, 61, 182, 0.646);
+}
 .event-description {
     width: 50%;
     margin: 2rem 4rem;
