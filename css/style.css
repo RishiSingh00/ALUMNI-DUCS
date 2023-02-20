@@ -246,6 +246,7 @@ width:100%;
     .logo_container {
         height: 8rem;
         width: 20rem;
+        right:3px;
     }
     
     .header_line_2 {

@@ -44,7 +44,6 @@ body {
     height: 260px;
     width: 260px;
     border-radius: 50%;
-    filter: grayscale(100%);
     cursor: pointer;
     transition: 400ms;
 }
