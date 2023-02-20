@@ -1,0 +1,39 @@
+
+.wrapper{
+    max-width: 100%;
+    position: relative;
+    background-color: white;
+}
+.wrapper .carouse{
+     white-space: nowrap;
+     font-size: 0px;
+     cursor: pointer ;
+     overflow: hidden;
+     scroll-behavior: smooth; 
+}
+.carouse .dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carouse .dragging img{
+    pointer-events: none;
+}
+.carouse img{
+    height: 200px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 14px;
+}
+.carouse img:first-child{
+    margin-left: 0px;
+}
+@media screen and (max-width: 900px)  {
+    .carouse img{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 900px)  {
+    .carouse img{
+        width: 100%;
+    }
+}
