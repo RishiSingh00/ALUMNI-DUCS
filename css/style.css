@@ -1067,7 +1067,7 @@ html {
   }
 
   .underline-social{
-    width: 36.8%;
+    width: 42%;
     height: 5px;
     background: #767676;
     border-radius: 3px;
@@ -1086,7 +1086,7 @@ animation: moving 2s linear infinite;
 }
 
 .underline-address{
-    width: 24%;
+    width: 28%;
     height: 5px;
     background: #767676;
     border-radius: 3px;
@@ -1107,7 +1107,7 @@ animation: moving 2s linear infinite;
     }
 
     .underline-map{
-        width: 9.5%;
+        width: 10%;
         height: 5px;
         background: #767676;
         border-radius: 3px;
@@ -1147,6 +1147,8 @@ animation: moving 2s linear infinite;
     padding-top:5px;
     width: 30%;
     height: 100%;
+    padding-right:5%;
+    padding-left: 3%;
   }
   
   .box-2 {
@@ -1164,6 +1166,7 @@ animation: moving 2s linear infinite;
     width: 25%;
     height: 100%;
     padding-left: 30px;
+    padding-right: 10%;
    
   }
 
