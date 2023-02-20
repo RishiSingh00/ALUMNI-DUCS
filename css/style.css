@@ -1126,7 +1126,6 @@ animation: moving 2s linear infinite;
   
   .box-1 {
     /* background-color: red; */
-    padding-left: 30px;
     padding-top:5px;
     width: 30%;
     height: 100%;
@@ -1134,7 +1133,6 @@ animation: moving 2s linear infinite;
   
   .box-2 {
     /* background-color: blue; */
-    padding-left: 30px;
     width: 15%;
     height: 100%;
   }
@@ -1155,7 +1153,6 @@ animation: moving 2s linear infinite;
     /* background-color: brown; */
     width: 30%;
     height: 100%;
-    padding-left: 30px;
   }
   .logo{
     width: 80px;
@@ -1220,9 +1217,6 @@ animation: moving 2s linear infinite;
         overflow: hidden;
     
     }
-    
-    
-    
         .underline-map{
             width: 5%;
             height: 5px;
@@ -1249,14 +1243,12 @@ animation: moving 2s linear infinite;
     .box-1{
         width: 100%;
         height:60px;
-        padding:20px;
     }
     
     .box-2{
         position: relative;
         width:100%;
         height:10px;
-        padding:20px;
     }
     
     .box-2 ul li{
@@ -1272,7 +1264,6 @@ animation: moving 2s linear infinite;
     .box-4{
         width:100%;
         height:auto;
-        padding:20px;
     }
     .copy-right{
         position: relative;
@@ -1280,9 +1271,23 @@ animation: moving 2s linear infinite;
     
 
 }
-
-@media screen and (max-width: 320px) {
+/*Mobile large*/
+@media screen and (max-width: 425px){
     .footer-container{
+        height: 100%;
+        padding-left: 3vw;
+    }
+    .box-1{
+        height: 100%;
+    }
+    .box-2{
+        height: 100%;
+    }
+    .box-3{
+        height: 100%;
+    }
+    .box-4{
+        height: 100%;
     }
 }
 /* -------------------FOOTER----------------------- */
