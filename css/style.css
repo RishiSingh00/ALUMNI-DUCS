@@ -1066,7 +1066,7 @@ html {
   }
 
   .underline-social{
-    width: 42%;
+    width: 36.8%;
     height: 5px;
     background: #767676;
     border-radius: 3px;
@@ -1085,7 +1085,7 @@ animation: moving 2s linear infinite;
 }
 
 .underline-address{
-    width: 25%;
+    width: 24%;
     height: 5px;
     background: #767676;
     border-radius: 3px;
@@ -1106,7 +1106,7 @@ animation: moving 2s linear infinite;
     }
 
     .underline-map{
-        width: 10%;
+        width: 9.5%;
         height: 5px;
         background: #767676;
         border-radius: 3px;
