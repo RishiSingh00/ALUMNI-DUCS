@@ -38,6 +38,8 @@ body {
     background-size:contain;
     margin-left: 1rem;
     background-image: url(../img/alumnimeet-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .event-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
