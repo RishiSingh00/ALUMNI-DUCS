@@ -63,7 +63,7 @@
 }
 
 .header_line_1 {
-    background-color: #17242A;
+    background-color: #022134;
     height: 2.5rem;
     width: 100%;
     display: block;
@@ -94,7 +94,7 @@
 .logo_container {
     /*border-radius : bottom top top bottom  */
     border-radius: 0rem 0rem 3rem 3rem;
-    background-color: #17242A;
+    background-color: #022134;
     height: 10rem;
     width: 28rem;
     z-index: 1;
