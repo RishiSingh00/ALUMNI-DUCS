@@ -457,9 +457,7 @@
     padding: 1.5rem;
 }
 
-.countdown div {
-   /* flex-basis: 105px;*/
-}
+
 
 .countdown div p {
     font-size: 5.5rem;
@@ -518,11 +516,7 @@
 
 
 
-@media screen and (max-width: 1120px) {
-    .upcoming-event {
-        /*flex-direction: column;*/
-    }
-}
+
 
 @media screen and (max-width:1024px) {
     .upcoming-event{
