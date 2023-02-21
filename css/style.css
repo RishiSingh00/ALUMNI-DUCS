@@ -788,7 +788,7 @@ hr{
   }
 
   .underline-social{
-    width: 42%;
+    width: 5vw;
     height: 5px;
     background: #767676;
     border-radius: 3px;
@@ -807,7 +807,7 @@ animation: moving 2s linear infinite;
 }
 
 .underline-address{
-    width: 28%;
+    width: 5.5vw;
     height: 5px;
     background: #767676;
     border-radius: 3px;
@@ -828,7 +828,7 @@ animation: moving 2s linear infinite;
     }
 
     .underline-map{
-        width: 10%;
+        width: 2.5vw;
         height: 5px;
         background: #767676;
         border-radius: 3px;
@@ -868,12 +868,14 @@ animation: moving 2s linear infinite;
     padding-top:5px;
     width: 30%;
     height: 100%;
+    padding-left: 5%;
   }
   
   .box-2 {
     /* background-color: blue; */
     width: 15%;
     height: 100%;
+    padding-left: 3%;
   }
   .box-2 ul li {
     padding-top: 6px;
@@ -884,12 +886,14 @@ animation: moving 2s linear infinite;
     /* background-color: green; */
     width: 25%;
     height: 100%;
+    padding-left: 3%;
   }
 
   .box-4{
     /* background-color: brown; */
     width: 30%;
     height: 100%;
+    padding-left: 3%;
   }
   .logo{
     width: 80px;
