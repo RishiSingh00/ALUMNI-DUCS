@@ -39,14 +39,14 @@ body {
     height: 260px;
     width: 260px;
     border-radius: 50%;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     cursor: pointer;
     transition: 400ms;
 }
 
-.profile:hover .profile-img {
+/* .profile:hover .profile-img {
     filter: grayscale(0);
-}
+} */
 
 .user-name {
     margin-top: 30px;
