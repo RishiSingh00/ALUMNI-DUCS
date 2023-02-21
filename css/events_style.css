@@ -80,6 +80,33 @@ body {
     margin-top: 3rem;
 }
 
+.btn-reg{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.register-btn1{
+    width: 50%;
+}
+
+.register-btn2{
+    width: 50%;
+    margin-left: 2vw;
+}
+
+.register-button {
+    width: 100%;
+    margin:2vw 0 2vw 0;
+    font-size: 2vw;
+    background-color: rgba(0, 128, 105, 0.918);
+    border: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 786px){
     .event-row{
         flex-direction: column;
