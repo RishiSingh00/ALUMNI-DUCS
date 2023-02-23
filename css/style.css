@@ -63,7 +63,7 @@
 }
 
 .header_line_1 {
-    background-color: #17242A;
+    background-color: #022134;
     height: 2.5rem;
     width: 100%;
     display: block;
@@ -87,14 +87,36 @@
 }
 
 .header_line_2 #du_logo {
-    padding: 5px 20px 5px 50px;
+    padding: 0px 8px 4px 20px;
+}
+
+.du_logo_ham{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.header_line_2 .g20_logo {
+    align-items: center;
+    /*padding: 8px 0px 8px 0px;*/
+}
+
+.header_line_2 .g20_logo img {
+    height: 100%;
+    width: 7rem;
+}
+
+.g20_logo_ham{
+    position: absolute;
+    top: 12px;
+    left: 73px;
 }
 
 
 .logo_container {
     /*border-radius : bottom top top bottom  */
     border-radius: 0rem 0rem 3rem 3rem;
-    background-color: #17242A;
+    background-color: #022134;
     height: 10rem;
     width: 28rem;
     z-index: 1;
@@ -123,7 +145,7 @@
     z-index: 9;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: whitesmoke;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -170,10 +192,11 @@
 .nav-bar{
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 
-@media screen and (max-width: 708px){
+@media screen and (max-width: 823px){
     .openbtn{
         display: block;
     }
@@ -199,6 +222,7 @@
 .navbar-right {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .navbar-right li {
@@ -232,9 +256,6 @@
     .navbar-right li{
         padding:0;
         font-size : 3rem;
-    }
-    #du_logo {
-        display:none;
     }
     .logo_container {
         left:3rem;
@@ -433,6 +454,7 @@
     flex-direction: row;
     width: 100%;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 .register {

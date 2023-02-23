@@ -66,6 +66,8 @@ body {
     font-style: italic;
     color: #12172b;
     transition: 0.3s;
+    display: flex;
+    flex-direction: row;
 }
 
 .event-location:hover{
@@ -77,6 +79,7 @@ body {
 }
 .event-details {
     transition: 0.3s;
+    margin-top: 2vw;
 }
 .event-row{
     display:flex;
@@ -85,7 +88,7 @@ body {
 
 .btn-reg{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
 }
@@ -96,7 +99,6 @@ body {
 
 .register-btn2{
     width: 30%;
-    margin-left: 2vw;
 }
 
 .register-button {
