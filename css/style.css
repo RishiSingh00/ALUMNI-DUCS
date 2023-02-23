@@ -38,10 +38,11 @@
 }
 .under_construction {
     position: relative;
-    display: flex;
+    /*display: flex;*/
     background: repeating-linear-gradient(-75deg,yellow , yellow 5px, black 5px, black 10px);
     height:15px;
     width:100%;
+    display: none;
 }
 
 /* Makes the animation pause on hover */
