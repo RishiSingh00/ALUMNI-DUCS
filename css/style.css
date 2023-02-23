@@ -90,6 +90,18 @@
     padding: 5px 20px 5px 50px;
 }
 
+.du_logo_ham{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.g20_logo_ham{
+    position: absolute;
+    top: 12px;
+    left: 73px;
+}
+
 
 .logo_container {
     /*border-radius : bottom top top bottom  */
@@ -123,7 +135,7 @@
     z-index: 9;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: whitesmoke;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
