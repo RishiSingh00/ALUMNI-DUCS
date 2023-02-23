@@ -50,6 +50,10 @@ body {
 .user-name {
     margin-top: 30px;
     font-size: 35px;
+    text-align: center;
+}
+.social-media-links{
+    text-align: center;
 }
 
 .profile h5 {
