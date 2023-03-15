@@ -695,9 +695,9 @@ hr{
 .paragraph {
     width: 55%;
     color:#17242A;
-    height: 80%;
+    height: 100%;
     font-family: 'beautymountains' ;
-    font-size: 2vw;
+    font-size: 1.5vw;
     display: flex;
     flex-direction: column;
     padding: 0px 30px 30px 30px;
@@ -717,7 +717,7 @@ hr{
 
 .banner img{
     width: 100%;
-    height: 70%;
+    height: 80%;
     padding-right: 10px;
 }
 
