@@ -1061,3 +1061,27 @@ animation: moving 2s linear infinite;
 }
 
 /* -------------------FOOTER----------------------- */
+
+#div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.content{
+    color: #af3131;
+    font-size: 7vw;
+    text-align: center;
+    width: 100%;
+    font-family: 'Righteous', serif;
+    padding: 10px;
+}
+.div-image {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+

@@ -1,3 +1,22 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyBvcc4pu2G9nINOR_kUrZF74RzES2dvs3A",
+    authDomain: "ducs-alumni.firebaseapp.com",
+    projectId: "ducs-alumni",
+    storageBucket: "ducs-alumni.appspot.com",
+    messagingSenderId: "795236711531",
+    appId: "1:795236711531:web:9b75ae244a5a7151a6852e",
+    measurementId: "G-5RGLFPWC11"
+};
+
+// Initialize Firebase
+if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+}else {
+    firebase.app(); // if already initialized, use that one
+}
+var database = firebase.database()
+
 //navbar
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
@@ -143,4 +162,49 @@ window.addEventListener("scroll", function () {
     parallax.style.backgroundPositionY = offset * 0.8 + "px";
     // DIV 1 background will move slower than other elements on scroll.
 });
+
+
+
+var flag = true;
+database.ref('flag').on('value',function (snapshot){
+    const data = snapshot.val()
+    console.log(data);
+    flag = data;
+    if(flag){
+        //activate
+        document.getElementById('main').style.display = "none";
+        document.getElementById('div2').style.display = "block";
+    } else {
+        //de activate
+        document.getElementById('main').style.display = 'block';
+        document.getElementById('div2').style.display = 'none';
+    }
+});
+
+database.ref('content').on('value',function (snapshot){
+    const data = snapshot.val()
+    if(flag){
+        document.getElementById('content').innerHTML = data;
+    }
+});
+
+database.ref('image').on('value',function (snapshot){
+    const data = snapshot.val()
+    if(flag){
+        document.getElementById('image').src = data;
+        document.getElementById('image').style.display = 'block';
+    } else {
+        document.getElementById('image').style.display = 'none';
+    }
+});
+
+database.ref('emoji').on('value',function (snapshot){
+    const data = snapshot.val()
+    if(flag){
+        document.getElementById('emoji').innerHTML = data;
+    }
+});
+
+
+
 
