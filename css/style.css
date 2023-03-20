@@ -1085,3 +1085,10 @@ animation: moving 2s linear infinite;
 }
 
 
+.notice{
+    width: 100%;
+    height: 100%;
+    font-size: large;
+}
+
+
