@@ -1084,11 +1084,161 @@ animation: moving 2s linear infinite;
     display: none;
 }
 
+/*Message*/
 
-.notice{
+.message {
     width: 100%;
     height: 100%;
-    font-size: large;
+    display: flex;
+    padding: 0 0 45px 18px;
 }
+
+.message-text {
+    height: 100%;
+    width: 50%;
+    font-family: 'beautymountains';
+    font-size: 1.5vw;
+}
+
+.message-text h1 {
+    font-size: 2.5vw;
+}
+
+.message-text hr {
+    margin-bottom: 20px;
+}
+
+.message-graphic {
+    width: 50%;
+    height: 100%;
+    padding: 45px;
+    display: block;
+}
+
+.message-graphic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+.message-graphic iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 14px;
+}
+
+@media screen and (max-width: 850px) {
+    .message {
+        flex-direction: column;
+    }
+
+    .message-text {
+        width: 100%;
+        height: 100%;
+    }
+
+    .message-graphic {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.notice {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.notice-heading {
+    width: 100%;
+    height: 100%;
+    font-size: xxx-large;
+    font-family: "posteramalight", serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.notice-cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 12px 12px;
+    justify-self: center;
+    justify-content: center;
+
+}
+
+.notice-text {
+    font-size: large;
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+.notice-text b{
+    font-size: large;
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+
+.card-1 {
+    position: relative;
+    width: 28%;
+    height: 100%;
+    z-index: 1;
+    font-size: large;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+
+/* CSS */
+.button-68 {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.button-68:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+
+.button-68:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+}
+
+.button-68:hover {
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
 
 
