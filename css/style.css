@@ -1191,6 +1191,17 @@ animation: moving 2s linear infinite;
     margin-right: 22px;
 }
 
+@media screen and (max-width: 850px) {
+    .notice-cards{
+        flex-direction: column;
+    }
+    .card-1{
+        margin-top: 12px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
 
 /* CSS */
 .button-68 {
